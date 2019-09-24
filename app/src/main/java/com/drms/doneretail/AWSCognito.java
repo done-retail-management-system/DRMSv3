@@ -48,20 +48,18 @@ public class AWSCognito {
     private static List<ItemToDisplay> mfaOptions;//Created a List for items to Display and the Options
     private static List<String> mfaAllOptionsCode;
 
-    private static List<ItemToDisplay> firstTimeLogInDetails; //Created a List
+    private static List<ItemToDisplay> firstTimeLogInDetails; //Created a List for FIRST TIME LOGIN
     private static Map<String, String> firstTimeLogInUserAttributes;
     private static List<String> firstTimeLogInRequiredAttributes;
     private static int firstTimeLogInItemsCount;
     private static Map<String, String> firstTimeLogInUpDatedAttributes;
     private static String firstTimeLoginNewPassword;
 
+    //
     private static final String userPoolId = "us-east-2_wqOUvI6lL";
-
     private static final String clientId = "70c3bvo3mqpuveu0vi7vegjl68";
-
     private static final String clientSecret = "1bcp6ok3tsnrsga3ekc0u8gh4dtl1pil6lj0m6mgj3r6429oehi5";
-
-    private static final Regions cognitoRegion = Regions.US_EAST_2;
+    private static final Regions cognitoRegion = Regions.US_EAST_2; // Cognito Region(location)
 
     // User details from the service
     private static CognitoUserSession currSession;
