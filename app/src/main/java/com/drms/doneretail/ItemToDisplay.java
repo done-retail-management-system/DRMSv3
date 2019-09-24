@@ -1,35 +1,25 @@
 package com.drms.doneretail;
 // Items to display on the login screen
 public class ItemToDisplay {
-    // Text for display
-    private String labelText;
-    private String dataText;
-    private String messageText;
 
     // Display text colors
     private int labelColor;
     private int dataColor;
     private int messageColor;
-
-    // Data box background
-    private int dataBackground;
+    // Text for display
+    private String labelText;
+    private String dataText;
+    private String messageText;
 
     // Data box drawable
     private String dataDrawable;
 
-    // Constructor to display
-    protected ItemToDisplay(String labelText, String dataText, String messageText,
-                            int labelColor, int dataColor, int messageColor,
-                            int dataBackground, String dataDrawable) {
-        this.labelText = labelText;
-        this.dataText = dataText;
-        this.messageText = messageText;
-        this.labelColor = labelColor;
-        this.dataColor = dataColor;
-        this.messageColor = messageColor;
-        this.dataBackground = dataBackground;
-        this.dataDrawable = dataDrawable;
-    }
+    // Data box background
+    private int dataBackground;
+
+
+
+    
 
     public String getLabelText() {
         return labelText;
