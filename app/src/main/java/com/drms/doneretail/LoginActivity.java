@@ -33,7 +33,7 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText userText;
+  /**  private EditText userText;
     private EditText passText;
 
     private String username;
@@ -187,6 +187,6 @@ public class LoginActivity extends AppCompatActivity {
     // Forgot password processing
     public void forgotPassword(View view) {
         forgotpasswordUser();
-    }
+    }*/
 
 }
