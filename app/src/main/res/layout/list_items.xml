@@ -19,14 +19,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/warehousing"
-                android:id="@+id/warehouse_id"
+                android:id="@+id/image_id"
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/warehouse"
-                android:id="@+id/headerWarehouse"
+                android:id="@+id/header"
                 android:textSize="25sp"
                 android:layout_below="@id/warehouse_id"
                 android:layout_centerHorizontal="true"
