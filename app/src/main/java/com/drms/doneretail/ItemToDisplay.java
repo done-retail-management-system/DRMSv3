@@ -16,10 +16,22 @@ public class ItemToDisplay {
 
     // Data box background
     private int dataBackground;
+    // Constructor to display
+    protected ItemToDisplay(String labelText, String dataText, String messageText,
+                            int labelColor, int dataColor, int messageColor,
+                            int dataBackground, String dataDrawable) {
+        this.labelText = labelText;
+        this.dataText = dataText;
+        this.messageText = messageText;
+        this.labelColor = labelColor;
+        this.dataColor = dataColor;
+        this.messageColor = messageColor;
+        this.dataBackground = dataBackground;
+        this.dataDrawable = dataDrawable;
+    }
 
 
 
-    
 
     public String getLabelText() {
         return labelText;
