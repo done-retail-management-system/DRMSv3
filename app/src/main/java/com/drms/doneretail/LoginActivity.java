@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -172,5 +173,20 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    // App methods
+    // Register user - start process
+    public void signUp(View view) {
+        signUpNewUser();
+    }
+
+    // Login if a user is already present
+    public void logIn(View view) {
+        signInUser();
+    }
+
+    // Forgot password processing
+    public void forgotPassword(View view) {
+        forgotpasswordUser();
+    }
 
 }
