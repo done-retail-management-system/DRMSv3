@@ -1,5 +1,5 @@
 package com.drms.doneretail;
-
+// Items to display on the login screen
 public class ItemToDisplay {
     // Text for display
     private String labelText;
