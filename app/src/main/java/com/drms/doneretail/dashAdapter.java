@@ -30,6 +30,9 @@ public class dashAdapter extends RecyclerView.Adapter<dashAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String ret_head = dashModelArrayList.get(position).getHead();
         holder.setHeader(ret_head);
+
+        int ret_img = dashModelArrayList.get(position).getImage();
+        holder.setImage(ret_img);
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.drms.doneretail;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<modelData> dashModelArrayList;
     RecyclerView recyclerView;
+    dashAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
             modelData dataModel = new modelData();
             dataModel.setHead(heads[i]);
             dataModel.setImage(Images[i]);
+            dashModelArrayList.add(dataModel);
         }
+
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        adapter = new dashAdapter(dashModelArrayList);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(adapter);
     }
 }
