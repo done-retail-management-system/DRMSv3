@@ -18,6 +18,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+//Amazon Cognito lets you add user sign-up, sign-in, and access control
 
 public class AWSCognito {
     private static final String TAG = "AWS Cognito";
@@ -365,8 +366,6 @@ public class AWSCognito {
     public static int getMfaOptionsCount() {
         return mfaOptions.size();
     }
-
-    //public static
 
     public static CognitoDevice getNewDevice() {
         return newDevice;

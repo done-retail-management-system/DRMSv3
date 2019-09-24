@@ -17,7 +17,7 @@ public class ItemToDisplay {
     // Data box drawable
     private String dataDrawable;
 
-    // Constructor
+    // Constructor to display
     protected ItemToDisplay(String labelText, String dataText, String messageText,
                             int labelColor, int dataColor, int messageColor,
                             int dataBackground, String dataDrawable) {
