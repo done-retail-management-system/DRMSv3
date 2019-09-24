@@ -21,19 +21,21 @@ import java.util.Set;
 //Amazon Cognito lets you add user sign-up, sign-in, and access control
 
 public class AWSCognito {
+
+
+    private static List<String> attributeDisplaySeq;
+    private static Map<String, String> signUpFieldsC2O;
+    private static Map<String, String> signUpFieldsO2C;
+    private static CognitoUserAttributes attributesChanged;
+    private static List<AttributeType> attributesToDelete; //Created a List for Attributes to delete
+
     private static final String TAG = "AWS Cognito";
     private static AWSCognito awsCognito;
     private static CognitoUserPool userPool;
     private static String user;
     private static CognitoDevice newDevice;
 
-    private static List<String> attributeDisplaySeq;
-    private static Map<String, String> signUpFieldsC2O;
-    private static Map<String, String> signUpFieldsO2C;
-    private static CognitoUserAttributes attributesChanged;
-    private static List<AttributeType> attributesToDelete;
-
-    private static List<ItemToDisplay> currDisplayedItems;
+    private static List<ItemToDisplay> currDisplayedItems; //Created a List for Items
     private static  int itemCount;
 
     private static List<ItemToDisplay> trustedDevices;
@@ -42,15 +44,17 @@ public class AWSCognito {
     private static CognitoDevice thisDevice;
     private static boolean thisDeviceTrustState;
 
-    private static List<ItemToDisplay> firstTimeLogInDetails;
+
+
+    private static List<ItemToDisplay> mfaOptions;//Created a List for items to Display and the Options
+    private static List<String> mfaAllOptionsCode;
+
+    private static List<ItemToDisplay> firstTimeLogInDetails; //Created a List 
     private static Map<String, String> firstTimeLogInUserAttributes;
     private static List<String> firstTimeLogInRequiredAttributes;
     private static int firstTimeLogInItemsCount;
     private static Map<String, String> firstTimeLogInUpDatedAttributes;
     private static String firstTimeLoginNewPassword;
-
-    private static List<ItemToDisplay> mfaOptions;
-    private static List<String> mfaAllOptionsCode;
 
     private static final String userPoolId = "us-east-2_wqOUvI6lL";
 
