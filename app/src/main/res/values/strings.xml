@@ -6,4 +6,8 @@
     <string name="password_hint">Password</string>
     <string name="login">Sign In</string>
     <string name="forgot">Forgot Password?</string>
+    <string name="warehouse">Warehouse Management</string>
+    <string name="POS">Point Of Sale</string>
+    <string name="Shelf">Shelf Management</string>
+    <string name="Store">Store Room Management</string>
 </resources>
