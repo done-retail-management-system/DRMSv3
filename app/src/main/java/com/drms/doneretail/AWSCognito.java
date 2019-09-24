@@ -22,21 +22,20 @@ import java.util.Set;
 
 public class AWSCognito {
 
+    //Declaration of variables to use on the attributes
+    private static final String TAG = "AWS Cognito";
+    private static AWSCognito awsCognito;
+    private static CognitoUserPool userPool;
+    private static String user;
+    private static CognitoDevice newDevice;
+    private static List<ItemToDisplay> currDisplayedItems; //Created a List for Items
+    private static  int itemCount;
 
     private static List<String> attributeDisplaySeq;
     private static Map<String, String> signUpFieldsC2O;
     private static Map<String, String> signUpFieldsO2C;
     private static CognitoUserAttributes attributesChanged;
     private static List<AttributeType> attributesToDelete; //Created a List for Attributes to delete
-
-    private static final String TAG = "AWS Cognito";
-    private static AWSCognito awsCognito;
-    private static CognitoUserPool userPool;
-    private static String user;
-    private static CognitoDevice newDevice;
-
-    private static List<ItemToDisplay> currDisplayedItems; //Created a List for Items
-    private static  int itemCount;
 
     private static List<ItemToDisplay> trustedDevices;
     private static int trustedDevicesCount;
@@ -49,7 +48,7 @@ public class AWSCognito {
     private static List<ItemToDisplay> mfaOptions;//Created a List for items to Display and the Options
     private static List<String> mfaAllOptionsCode;
 
-    private static List<ItemToDisplay> firstTimeLogInDetails; //Created a List 
+    private static List<ItemToDisplay> firstTimeLogInDetails; //Created a List
     private static Map<String, String> firstTimeLogInUserAttributes;
     private static List<String> firstTimeLogInRequiredAttributes;
     private static int firstTimeLogInItemsCount;
