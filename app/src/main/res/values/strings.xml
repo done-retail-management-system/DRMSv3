@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Done Retail</string>
+    <string name="app_logo">Done Retail Management System</string>
+    <string name="app_description">A sophisticated approach to supply chain and retail management</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Sign In</string>
+    <string name="forgot">Forgot Password?</string>
 </resources>
