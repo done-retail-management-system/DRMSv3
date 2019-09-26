@@ -14,10 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SuppliersActivity"></activity>
+        <activity android:name=".ShopsActivity"></activity>
+        <activity android:name=".SuppliersActivity" />
         <activity
             android:name=".OrdersActivity"
-            android:parentActivityName=".WarehouseActivity"></activity>
+            android:parentActivityName=".WarehouseActivity" />
         <activity android:name=".WarehouseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
