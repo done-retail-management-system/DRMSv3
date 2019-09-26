@@ -9,6 +9,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
+        android:id="@+id/tabLayout"
         android:background="@color/w_button_colour"
         android:layout_height="wrap_content">
 
