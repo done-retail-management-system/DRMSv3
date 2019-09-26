@@ -10,4 +10,17 @@
     <string name="POS">Point Of Sale</string>
     <string name="Shelf">Shelf Management</string>
     <string name="Store">Store Room Management</string>
+
+    <!--Warehouse strings-->
+    <string name="string_Pending">Pending Orders</string>
+    <string name="string_received">Store Orders</string>
+    <string name="string_completed">Completed Orders</string>
+    <string name="string_shop">Shops</string>
+    <string name="string_order">Orders</string>
+    <string name="string_supplier">Suppliers</string>
+    <string name="stock_on_hand">Stock On hand</string>
+    <string name="stock">Stock</string>
+    <string name="returned_stock">Stock Returned</string>
+    <string name="text_string">Please select an option</string>
+
 </resources>

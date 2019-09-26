@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+
+    <!--Warehouse resources-->
+    <color name="w_tabColour">#325BA3</color>
+    <color name="w_tabColour2">#5407DB</color>
+    <color name="w_tabTextColour">#ffffff</color>
+    <color name="w_tabIndicator">#524F4F</color>
+    <color name="w_button_colour">#c3b1a8</color>
+
+
 </resources>
