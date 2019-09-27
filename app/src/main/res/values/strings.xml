@@ -23,8 +23,12 @@
     <string name="returned_stock">Stock Returned</string>
     <string name="text_string">Please select an option</string>
 
+    <string name="summary">Summary</string>
     <string name="new_order">New Orders</string>
     <string name="completed_order">Completed Orders</string>
+
+    <string name="stock_item">Add stock item</string>
+    <string name="delete_item">Remove stock item</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

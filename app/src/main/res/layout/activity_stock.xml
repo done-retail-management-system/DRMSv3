@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
+    android:background="@color/back"
     android:layout_height="match_parent"
     tools:context=".StockActivity">
 
@@ -15,6 +15,12 @@
         app:tabTextColor="@android:color/black"
         android:layout_height="wrap_content">
 
+        <!--<com.google.android.material.tabs.TabItem
+           android:id="@+id/tabSummary"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Tuesday" />-->
+
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabStockOnHand"
             android:layout_width="wrap_content"
@@ -22,11 +28,7 @@
             android:text="@string/stock_on_hand"
             />
 
-        <!--<com.google.android.material.tabs.TabItem
-            android:id="@+id/tabTuesday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tuesday" />-->
+
 
        <com.google.android.material.tabs.TabItem
             android:id="@+id/tabReturned"
