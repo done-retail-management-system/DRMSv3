@@ -15,22 +15,21 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stock_on_hand" />
+            android:text="@string/new_order" />
 
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="@string/completed_order" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/returned_stock" />
-
+            android:text="" />
 
     </com.google.android.material.tabs.TabLayout>
 
-    
+
 
 </RelativeLayout>
