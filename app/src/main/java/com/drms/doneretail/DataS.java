@@ -27,5 +27,5 @@ public class DataS {
     }//set pic
     public int getPic() {
         return pic;
-    }//return pic 
+    }//return pic
 }
