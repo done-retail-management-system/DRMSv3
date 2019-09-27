@@ -27,7 +27,7 @@
                 android:layout_height="100dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/warehousing" />
+                android:src="@drawable/instock" />
 
             <TextView
                 android:id="@+id/header"
@@ -36,7 +36,7 @@
                 android:layout_below="@id/image_id"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="5dp"
-                android:text="@string/INSTOCK"
+                android:text="@string/IN-STOCK"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
