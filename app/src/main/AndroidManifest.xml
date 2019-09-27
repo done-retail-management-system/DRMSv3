@@ -41,7 +41,7 @@
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
 
-        
+
         <activity android:name=".MainActivity" />
 
 
