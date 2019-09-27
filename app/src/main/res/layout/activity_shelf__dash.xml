@@ -34,9 +34,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/image_id"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="5dp"
-                android:text="@string/IN-STOCK"
+                android:layout_marginBottom="5dp"
+                android:text="@string/instock"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
