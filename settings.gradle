@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':mssql-jdbc-7.4.1.jre8'
 rootProject.name='Done Retail'
