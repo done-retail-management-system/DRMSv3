@@ -11,26 +11,42 @@
         android:layout_width="match_parent"
         android:id="@+id/tabLayout"
         android:background="@color/w_button_colour"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black"
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabStockOnHand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stock_on_hand" />
+            android:text="@string/stock_on_hand"
+            />
 
-
-        <com.google.android.material.tabs.TabItem
+        <!--<com.google.android.material.tabs.TabItem
+            android:id="@+id/tabTuesday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="Tuesday" />-->
 
-        <com.google.android.material.tabs.TabItem
+       <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabReturned"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/returned_stock" />
 
 
     </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="948dp"
+        android:layout_height="361dp"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginTop="51dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
 
 
 </RelativeLayout>

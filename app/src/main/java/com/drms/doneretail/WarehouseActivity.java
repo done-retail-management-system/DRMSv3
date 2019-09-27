@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.text.DateFormat;
+import java.util.Calendar;
 
 public class WarehouseActivity extends AppCompatActivity {
 
@@ -17,6 +21,11 @@ public class WarehouseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_warehouse);
 
+
+        Calendar calendar =  Calendar.getInstance();
+        String currentDate = DateFormat.getDateInstance().format(calendar.getTime());
+        TextView textViewDate = findViewById(R.id.date);
+        textViewDate.setText(currentDate);
         //button = button.findViewById(R.id.btn_stock);
 
         button = (Button) findViewById(R.id.btn_stock);
