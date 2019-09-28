@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#377f77</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
@@ -12,6 +12,6 @@
     <color name="w_tabIndicator">#524F4F</color>
     <color name="w_button_colour">#c3b1a8</color>
     <color name="back"> #DAEDEB</color>
-
+    <color name="searchBar">#d7dbd9</color>
 
 </resources>

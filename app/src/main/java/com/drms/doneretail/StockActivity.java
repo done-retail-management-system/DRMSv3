@@ -16,6 +16,7 @@ public class StockActivity extends AppCompatActivity {
     TabLayout tabLayout;
     TabItem tabStockOnHand;
     TabItem tabReturned;
+    TabItem tabSummary;
     ViewPager viewPager;
 
     @Override
@@ -25,8 +26,8 @@ public class StockActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tabLayout);
         tabStockOnHand = findViewById(R.id.tabStockOnHand);
-        //TabItem tabTuesday = findViewById(R.id.tabTuesday);
-         tabReturned = findViewById(R.id.tabReturned);
+        tabSummary = findViewById(R.id.tabSummary);
+        tabReturned = findViewById(R.id.tabReturned);
         viewPager = findViewById(R.id.viewPager);
 
         PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
