@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/image_id"
                 android:layout_marginBottom="5dp"
-                android:text="@string/Shelf"
+                android:text="InStock"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 

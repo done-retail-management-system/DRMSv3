@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Shelf_Dash"></activity>
+        <activity android:name=".out_of_stock"></activity>
+        <activity android:name=".in_stock" />
+        <activity android:name=".on_shelf" />
+        <activity android:name=".Shelf_Dash" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginActivity"
