@@ -11,6 +11,7 @@
     >
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/instock"
         android:layout_width="match_parent"
         android:layout_height="126dp"
         android:clickable="true"
@@ -36,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/image_id"
                 android:layout_marginBottom="5dp"
-                android:text="@string/instock"
+                android:text="@string/Shelf"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
