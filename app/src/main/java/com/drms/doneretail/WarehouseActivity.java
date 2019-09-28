@@ -3,6 +3,7 @@ package com.drms.doneretail;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ public class WarehouseActivity extends AppCompatActivity {
 
 
     private Button button;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +32,11 @@ public class WarehouseActivity extends AppCompatActivity {
                 //WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_warehouse);
+
         Calendar calendar =  Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance().format(calendar.getTime());
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.sample);
         //TextView textViewDate = findViewById(R.id.date);
         //textViewDate.setText(currentDate);
         //button = button.findViewById(R.id.btn_stock);
@@ -41,6 +46,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openStockActivity();
+                mediaPlayer.start();
             }
         });
 
@@ -49,6 +55,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openOrdersActivity();
+                mediaPlayer.start();
             }
         });
 
@@ -57,6 +64,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openSupplierActivity();
+                mediaPlayer.start();
             }
         });
 
@@ -65,6 +73,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openShopActivity();
+                mediaPlayer.start();
             }
         });
 
@@ -77,6 +86,7 @@ public class WarehouseActivity extends AppCompatActivity {
                 openOrdersActivity();
                 openSupplierActivity();
                 openShopActivity();
+
             }
         });
 

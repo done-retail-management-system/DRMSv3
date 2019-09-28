@@ -7,4 +7,27 @@
     android:background="@color/back"
     tools:context=".SuppliersActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="355dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="429dp"
+        android:text="See List of Suppliers Below"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_width="957dp"
+        android:layout_height="367dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="52dp" />
 </RelativeLayout>
