@@ -96,11 +96,11 @@
             android:gravity="center"
             android:textColor="@color/design_default_color_primary"
             android:text="@string/app_name"
-            android:background="@color/colorAccent"/>
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/>
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
     </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 
