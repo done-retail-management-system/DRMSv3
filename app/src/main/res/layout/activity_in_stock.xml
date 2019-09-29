@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".in_stock">
-
+    android:fitsSystemWindows="true"
+    tools:context="in_stock">
+<androidx.core.widget.NestedScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
     <TextView
         android:id="@+id/title"
         android:textColor="@color/colorPrimary"
@@ -36,8 +46,8 @@
             android:text="=Search your Category"
             android:textColor="@color/colorAccent"
             android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic"
-            android:drawableStart="@drawable/ic"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawableStart="@drawable/ic_search_primary_light"
             android:drawablePadding="10dp"
             />
     </androidx.cardview.widget.CardView> <!-- Created Card View for the Search Bar -->
@@ -52,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp">
     </androidx.viewpager.widget.ViewPager> <!-- ViewPager for the different views between the cardview and the Textview -->
-
+    <include layout="@layout/activity_view_pager_header_shimmer"/>//view header
     <TextView
         android:id="@+id/titleCategory"
         android:text="Product Categories"
@@ -77,16 +87,19 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="50dp">
 
+<include layout="@layout/activity_recycler_category_shimmer"/>//shimmer the categories
+
     </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
-
-
-
-
-
-    <LinearLayout
+    <TextView
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_primary"
+        android:text="@string/app_name"
+        android:background="@color/colorAccent"/>
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="140dp"></LinearLayout>
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
