@@ -4,6 +4,7 @@
     package="com.drms.doneretail">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -14,20 +15,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ShopsActivity"
-            android:parentActivityName=".WarehouseActivity" >
+
+        <activity android:name=".AddNewStock">
+
+
         </activity>
+        <activity android:name=".ScanActivity">
 
 
-        <activity android:name=".SuppliersActivity"
-            android:parentActivityName=".WarehouseActivity" >
         </activity>
+        <activity
+            android:name=".ShopsActivity"
+            android:parentActivityName=".WarehouseActivity">
 
 
+        </activity>
+        <activity
+            android:name=".SuppliersActivity"
+            android:parentActivityName=".WarehouseActivity">
+
+
+        </activity>
         <activity
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
-
         <activity android:name=".WarehouseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,16 +46,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
-
-
         <activity android:name=".MainActivity" />
-
-
         <activity android:name=".LoginActivity" />
     </application>
 

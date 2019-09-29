@@ -46,7 +46,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openStockActivity();
-                mediaPlayer.start();
+                //mediaPlayer.start();
             }
         });
 
@@ -55,7 +55,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openOrdersActivity();
-                mediaPlayer.start();
+                //mediaPlayer.start();
             }
         });
 
@@ -64,7 +64,7 @@ public class WarehouseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openSupplierActivity();
-                mediaPlayer.start();
+                //mediaPlayer.start();
             }
         });
 
@@ -72,8 +72,8 @@ public class WarehouseActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openShopActivity();
-                mediaPlayer.start();
+                openShopsActivity();
+                //mediaPlayer.start();
             }
         });
 
@@ -85,7 +85,7 @@ public class WarehouseActivity extends AppCompatActivity {
                 openStockActivity();
                 openOrdersActivity();
                 openSupplierActivity();
-                openShopActivity();
+                openShopsActivity();
 
             }
         });
@@ -112,7 +112,7 @@ public class WarehouseActivity extends AppCompatActivity {
 
     }
 
-    public void openShopActivity(){
+    public void openShopsActivity(){
         Intent intent = new Intent(this, ShopsActivity.class);
         startActivity(intent);
 
