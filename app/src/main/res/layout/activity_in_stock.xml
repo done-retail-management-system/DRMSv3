@@ -6,6 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".in_stock">
 
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/colorPrimary"
+        android:text="Products In-Stock"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/> <!-- TextView For the Title of the Page -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSearch"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:text="=Search your Category"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic"
+            android:drawableStart="@drawable/ic"
+            android:drawablePadding="10dp"
+            />
+    </androidx.cardview.widget.CardView> <!-- Created Card View for the Search Bar -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerHeader"
+        android:foregroundGravity="center"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:layout_below="@id/cardSearch"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </androidx.viewpager.widget.ViewPager> <!-- ViewPager for the different views between the cardview and the Textview -->
+
+    <TextView
+        android:id="@+id/titleCategory"
+        android:text="Product Categories"
+        android:textSize="19sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/viewPagerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/> <!-- TextView For Categories -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
+
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
