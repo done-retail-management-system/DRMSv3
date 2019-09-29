@@ -68,8 +68,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCategory"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/titleCategory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="50dp">
 
     </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
 
