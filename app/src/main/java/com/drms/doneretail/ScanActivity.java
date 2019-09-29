@@ -5,6 +5,7 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 import android.os.Bundle;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class ScanActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler{
 
@@ -34,7 +35,7 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void handleResult(Result result) {
 
-        AddNewStock.textView.setText(result.getText());
+        AddNewStock.textInput.setText(result.getText());
         onBackPressed();
 
     }

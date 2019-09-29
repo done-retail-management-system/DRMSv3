@@ -8,10 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Spinner;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 public class AddNewStock extends AppCompatActivity {
 
-    public static TextView textView;
+
+    Spinner spinner;
+    public static TextInputEditText textInput;
     Button button;
 
     @Override
@@ -19,8 +24,9 @@ public class AddNewStock extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_stock);
 
-        textView = (TextView)findViewById(R.id.textViewBar);
+        textInput = (TextInputEditText)findViewById(R.id.viewBar);
         button = (Button)findViewById(R.id.buttonBarScan);
+        spinner =(Spinner)findViewById(R.id.spinnerCategory);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
