@@ -96,6 +96,7 @@
         android:textSize="24sp" />
 
     <ListView
+        android:id="@+id/list_Cart"
         android:layout_width="wrap_content"
         android:layout_height="399dp"
         android:layout_alignParentStart="true"
