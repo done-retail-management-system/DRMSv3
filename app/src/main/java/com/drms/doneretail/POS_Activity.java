@@ -17,7 +17,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class POS_Activity extends AppCompatActivity{
 
-    public static TextView results;
     public static String barcode;
     FloatingActionButton scan_item;
 
@@ -31,7 +30,6 @@ public class POS_Activity extends AppCompatActivity{
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_pos_);
 
-        results = findViewById(R.id.txtbarcode);
         scan_item = findViewById(R.id.btnScan);
         scan_item.setOnClickListener(new View.OnClickListener(){
 
