@@ -63,6 +63,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="260dp"
         android:layout_height="46dp"
+
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -77,6 +78,7 @@
         android:id="@+id/spinnerType"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="260dp"
+
         android:layout_height="46dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
