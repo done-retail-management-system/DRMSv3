@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment;
 
 public class PageAdapter extends FragmentPagerAdapter {
 
-
     private int numOfTabs;
 
     //PageAdapter constructor is use to communicate between this class and stockActivity.java.
@@ -15,7 +14,6 @@ public class PageAdapter extends FragmentPagerAdapter {
         super(fm);
         this.numOfTabs = numOfTabs;
     }
-
 
     //getItem is where you will initialize the fragments for Android Tablayout
     @Override
@@ -27,6 +25,10 @@ public class PageAdapter extends FragmentPagerAdapter {
                 return new StockOnHand();
             case 2:
                 return new ReturnedStock();
+            case 3:
+                return new NewOrders();
+            case 4:
+                return new CompletedOrders();
             default:
                 return null;
         }

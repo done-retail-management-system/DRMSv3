@@ -39,6 +39,7 @@
         <activity
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
+
         <activity android:name=".WarehouseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
