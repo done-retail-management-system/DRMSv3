@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/toys" />
 
                     <View
                         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/breakfast" />
 
                     <View
                         android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/cooldrinks" />
 
                     <View
                         android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/sauces" />
 
                     <View
                         android:layout_width="match_parent"
@@ -191,7 +191,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/toiletry" />
 
                     <View
                         android:layout_width="match_parent"
@@ -227,7 +227,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/dairy" />
 
                     <View
                         android:layout_width="match_parent"
