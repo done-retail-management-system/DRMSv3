@@ -26,8 +26,17 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:orientation="horizontal"
-        android:text= "Supplier Name">
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="50sp"
+            android:background="@color/w_button_colour"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="Supplier Name"/>
+
     </LinearLayout>
 
 
