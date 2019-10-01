@@ -23,7 +23,7 @@
     <string name="returned_stock">Stock Returned</string>
     <string name="text_string">Please select an option</string>
 
-    <string name="summary">Summary</string>
+    <string name="summary">Dashboard</string>
     <string name="new_order">New Orders</string>
     <string name="completed_order">Completed Orders</string>
 
