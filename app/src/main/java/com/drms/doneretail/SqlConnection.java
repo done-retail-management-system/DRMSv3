@@ -30,24 +30,36 @@ public class SqlConnection {
     }
 
     @SuppressLint("NewApi")
-
-    public void Conn(){
+    public Connection Conn(){
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-        connURL = "jdbc:sqlserver://" + server_port +";databaseName=" + database + ";user=" + user + ";password=" + pass + ";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+        connURL = 
 
         try {
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
             conn = DriverManager.getConnection(connURL);
+
         }
         catch (SQLException se ){
            se.printStackTrace();
         }
         catch (ClassNotFoundException e) {
+           e.printStackTrace();
+        }
+        catch (IllegalAccessException e)
+        {
+            e.printStackTrace();
+        }
+        catch (InstantiationException e)
+        {
+            e.printStackTrace();
+        }
+        catch(Exception e)
+        {
             e.printStackTrace();
         }
 
-        //return conn;
+        return conn;
     }
 }
