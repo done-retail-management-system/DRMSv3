@@ -12,36 +12,54 @@ import java.sql.SQLException;
 
 public class SqlConnection {
 
-    String server_port, database,user,pass;
+    private String server_port, database,user,pass;
+    public Connection conn ;
+    String connURL ;
 
-    @SuppressLint("NewApi")
-    public Connection Conn(){
-        server_port = "drms.database.windows.net";
+    public SqlConnection() {
+        server_port = "drms.database.windows.net:1433";
         database = "DRMS";
         user = "adminDRMS@drms";
         pass = "Thapelo@05";
 
+        conn = null;
+        connURL = null;
+
+        Conn();
+
+    }
+
+    @SuppressLint("NewApi")
+    public Connection Conn(){
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-
-        Connection conn = null;
-        String connURL = null;
+        connURL = "jdbc:jtds:sqlserver://drms.database.windows.net:1433;database=DRMS;user=adminDRMS@drms;password=Thapelo@05;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
         try {
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            connURL = "jdbc:jtds:sqlserver://" + server_port +";databaseName=" + database + ";user=" + user + ";password=" + pass + ";";
-
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
             conn = DriverManager.getConnection(connURL);
+
         }
         catch (SQLException se ){
-            Log.e("ERROR",se.getMessage());
+           se.printStackTrace();
         }
-        catch (ClassNotFoundException e ){
-            Log.e("ERROR",e.getMessage());
+        catch (ClassNotFoundException e) {
+           e.printStackTrace();
         }
-        catch (Exception e){
-            Log.e("ERROR",e.getMessage());
+        catch (IllegalAccessException e)
+        {
+            e.printStackTrace();
         }
+        catch (InstantiationException e)
+        {
+            e.printStackTrace();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+
         return conn;
     }
 }
