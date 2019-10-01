@@ -15,8 +15,7 @@ import com.drms.doneretail.adapter.RecyclerViewHomeAdapter;
 import com.drms.doneretail.model.Categories;
 import com.drms.doneretail.model.Meals;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+
 
 // TODO 31 implement the HomeView interface at the end
 public class HomeActivity extends AppCompatActivity {

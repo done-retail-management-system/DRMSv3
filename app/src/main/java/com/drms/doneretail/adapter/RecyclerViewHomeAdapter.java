@@ -19,10 +19,6 @@ import com.drms.doneretail.model.Categories;
 import java.util.List;
 
 
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 public class RecyclerViewHomeAdapter extends RecyclerView.Adapter<RecyclerViewHomeAdapter.RecyclerViewHolder> {
 
     private List<Categories.Category> categories;
@@ -59,13 +55,13 @@ public class RecyclerViewHomeAdapter extends RecyclerView.Adapter<RecyclerViewHo
     }
 
     static class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        @BindView(R.id.categoryThumb)
+
         ImageView categoryThumb;
-        @BindView(R.id.categoryName)
+
         TextView categoryName;
         RecyclerViewHolder(@NonNull View itemView) {
             super(itemView);
-            ButterKnife.bind(this, itemView);
+
             itemView.setOnClickListener(this);
         }
 

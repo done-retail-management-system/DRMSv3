@@ -1,13 +1,13 @@
 
-package com.drms.doneretail.view.home;
+
+/*package com.drms.doneretail.view.home;
 
 
-import com.drms.doneretail.model.Categories;
+
+/import com.drms.doneretail.model.Categories;
 import com.drms.doneretail.model.Meals;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+
 
 class HomePresenter {
 
@@ -35,7 +35,7 @@ class HomePresenter {
                      * and enter response.body() to the parameter
                      */
 
-
+/*
                 }
                 else {
                     // TODO 23 Show an error message if the conditions are not met
@@ -54,6 +54,7 @@ class HomePresenter {
 
                 // TODO 24 Close loading
                 // TODO 25 Show an error message
+/*
             }
         });
     }
@@ -77,7 +78,7 @@ class HomePresenter {
                      * and enter response.body() to the parameter
                      */
 
-
+/*
                 }
                 else {
                     // TODO 31 Show an error message if the conditions are not met
@@ -96,7 +97,9 @@ class HomePresenter {
 
                 // TODO 32 Close loading
                 // TODO 33 Show an error message
+/*
             }
         });
     }
 }
+*/
