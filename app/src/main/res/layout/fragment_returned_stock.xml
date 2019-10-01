@@ -5,15 +5,36 @@
     android:background="@color/back"
     android:layout_height="match_parent"
     tools:context=".ReturnedStock">
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="227dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="368dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="365dp"
+    android:layout_marginBottom="402dp"
+    android:text="List of stock returned to suppliers"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:textStyle="bold" />
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="420dp"
-        android:layout_height="107dp"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="238dp"
-        android:layout_marginBottom="182dp"
-        android:text="RETURNED STOCK" />
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 </RelativeLayout>
