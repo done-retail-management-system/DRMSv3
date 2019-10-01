@@ -1,6 +1,12 @@
 
 <resources>
-    <string name="app_name">Done Retail Management Shelf Management </string>
+    <string name="app_name">Done Retail </string>
+    <string name="app_logo">Done Retail Management System </string>
+    <string name="app_description">A sofisticated approach to supply chain </string>
+    <string name="email_hint">Email Address </string>
+    <string name="password_hint">Password </string>
+    <string name="login">Sign In </string>
+    <string name="forgot">Forgot Password </string>
     <string name="search_your_recipes">Search Product...</string>
     <string name="meal_categories">Product Categories</string>
 </resources>
