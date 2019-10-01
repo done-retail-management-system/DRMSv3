@@ -9,10 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.text.format.DateFormat;
 import android.widget.Button;
-
-import java.text.SimpleDateFormat;
 
 
 /**
@@ -21,6 +18,7 @@ import java.text.SimpleDateFormat;
 public class StockOnHand extends Fragment {
 
     Button button;
+
     public StockOnHand() {
         // Required empty public constructor
     }

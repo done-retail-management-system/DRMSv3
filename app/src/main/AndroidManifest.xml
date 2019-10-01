@@ -51,7 +51,11 @@
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
-        <activity android:name=".MainActivity" />
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
         <activity android:name=".LoginActivity" />
     </application>
 

@@ -6,6 +6,25 @@
     android:background="@color/back"
     tools:context=".StockOnHand">
 
+    <EditText
+    android:id="@+id/editText"
+    android:layout_width="476dp"
+    android:layout_height="54dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginEnd="477dp"
+    android:layout_marginBottom="402dp"
+    android:background="@drawable/search_bar"
+    android:drawableStart="@android:drawable/ic_search_category_default"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Search" />
+
+
     <Button
         android:id="@+id/add_new"
         android:layout_width="182dp"
@@ -13,51 +32,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="511dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginEnd="549dp"
+        android:layout_marginBottom="9dp"
         android:background="@drawable/button_properties"
-        android:text="@string/stock_item"
+        android:text="Add Stock Item"
         android:textSize="12sp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="182dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="738dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/button_properties"
-        android:text="@string/delete_item"
-        android:textSize="12sp" />
-
-    <EditText
-        android:layout_width="267dp"
-        android:layout_height="51dp"
-        android:background="@drawable/search_bar"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="633dp"
-        android:layout_marginBottom="6dp"
-        android:hint="Search"
-        android:drawableLeft="@android:drawable/ic_search_category_default" />
-
-    <ListView
-        android:layout_width="955dp"
-        android:layout_height="333dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="66dp" />
-
-
 </RelativeLayout>
