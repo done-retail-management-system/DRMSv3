@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".on_shelf">
+    tools:context=".in_stock">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold"/>
 
-             <!-- TextView For the Title of the Page -->
+            <!-- TextView For the Title of the Page -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardSearch"
                 android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                 android:scrollbars="none">
 
 
-         </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
+            </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
             <include android:id="@+id/shimmerCategory"
                 layout="@layout/item_recycler_category_shimmer"/>
             <TextView
