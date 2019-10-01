@@ -27,11 +27,12 @@ public class CheckItem{
 
         try {
             conn = new SqlConnection();
-            connect = conn.Conn();
 
+            connect = conn.conn;
 
             if (connect == null){
                 check = "Check your internet Access";
+                suceeded = false;
             }
             else{
 

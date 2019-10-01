@@ -12,43 +12,42 @@ import java.sql.SQLException;
 
 public class SqlConnection {
 
-    String server_port, database,user,pass;
-    
+    private String server_port, database,user,pass;
+    public Connection conn ;
+    String connURL ;
+
     public SqlConnection() {
-
-    }
-
-
-
-    @SuppressLint("NewApi")
-
-    public Connection Conn(){
-        server_port = "drms.database.windows.net";
+        server_port = "drms.database.windows.net:1433";
         database = "DRMS";
         user = "adminDRMS@drms";
         pass = "Thapelo@05";
 
+        conn = null;
+        connURL = null;
+
+        Conn();
+
+    }
+
+    @SuppressLint("NewApi")
+
+    public void Conn(){
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-
-        Connection conn = null;
-        String connURL = null;
+        connURL = "jdbc:sqlserver://" + server_port +";databaseName=" + database + ";user=" + user + ";password=" + pass + ";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            connURL = "jdbc:jtds:sqlserver://" + server_port +";databaseName=" + database + ";user=" + user + ";password=" + pass + ";";
-
             conn = DriverManager.getConnection(connURL);
         }
         catch (SQLException se ){
-            Log.e("ERROR",se.getMessage());
+           se.printStackTrace();
         }
-        catch (ClassNotFoundException e ){
-            Log.e("ERROR",e.getMessage());
+        catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
-        catch (Exception e){
-            Log.e("ERROR",e.getMessage());
-        }
-        return conn;
+
+        //return conn;
     }
 }
