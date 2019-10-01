@@ -42,15 +42,15 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="692dp"
-        android:layout_marginBottom="414dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="691dp"
+        android:layout_marginBottom="403dp"
         android:background="@drawable/search_bar"
-        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:drawableStart="@android:drawable/ic_search_category_default"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="Search" />
 
     <ListView
         android:layout_width="955dp"

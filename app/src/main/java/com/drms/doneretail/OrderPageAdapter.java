@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentManager;
 public class OrderPageAdapter extends FragmentPagerAdapter {
 
     private int numberOfTabs;
-    
+
     //PageAdapter constructor is use to communicate between this class and stockActivity.java.
     public OrderPageAdapter(FragmentManager fm, int numberOfTabs) {
         super(fm);
