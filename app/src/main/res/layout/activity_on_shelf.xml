@@ -46,7 +46,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Products On Shelf"
+                android:text="PRODUCTS ON-SHELF"
                 android:textColor="#ffffff"
                 android:textSize="30dp"
                 android:textStyle="bold"/>
@@ -85,7 +85,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="16dp"
-                android:text="Product Categories"
+                android:text="PRODUCT CATEGORIES"
                 android:textColor="#ffffff"
                 android:textSize="19sp"
                 android:textStyle="bold" /> <!-- TextView For Categories -->
