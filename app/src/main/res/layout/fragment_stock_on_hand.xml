@@ -13,9 +13,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="513dp"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginStart="511dp"
+        android:layout_marginEnd="267dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_properties"
         android:text="@string/stock_item"
         android:textSize="12sp" />
@@ -27,30 +27,25 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="736dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginStart="738dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_properties"
         android:text="@string/delete_item"
         android:textSize="12sp" />
 
     <EditText
-        android:id="@+id/editText"
         android:layout_width="267dp"
         android:layout_height="51dp"
+        android:background="@drawable/search_bar"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="691dp"
-        android:layout_marginBottom="403dp"
-        android:background="@drawable/search_bar"
-        android:drawableStart="@android:drawable/ic_search_category_default"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Search" />
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="633dp"
+        android:layout_marginBottom="6dp"
+        android:hint="Search"
+        android:drawableLeft="@android:drawable/ic_search_category_default" />
 
     <ListView
         android:layout_width="955dp"
@@ -60,9 +55,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="70dp" />
+        android:layout_marginBottom="66dp" />
 
 
 </RelativeLayout>

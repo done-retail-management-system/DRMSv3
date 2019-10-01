@@ -44,5 +44,6 @@
     <string name="Type2">Gripe</string>
     <string name="Type3">Suggestion</string>
     <string name="Type4">Bug</string>
+    <string name="search">Search</string>
 
 </resources>
