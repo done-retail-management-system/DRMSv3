@@ -11,16 +11,16 @@ import java.sql.SQLException;
 
 
 public class SqlConnection {
-    private static final String LOG = "DEBUG";
-    private static String ip = "drms.database.windows.net";
-    private static String port = "1433";
-    private String class_ = "net.sourceforge.jtds.jdbc.Driver";
-    private static String db = "DRMS";
-    private static String user = "adminDRMS@drms";
-    private static String password = "Thapelo@05";
+
+    String server_port, database,user,pass;
 
     @SuppressLint("NewApi")
     public Connection Conn(){
+        server_port = "drms.database.windows.net";
+        database = "DRMS";
+        user = "adminDRMS@drms";
+        pass = "Thapelo@05";
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
@@ -28,8 +28,8 @@ public class SqlConnection {
         String connURL = null;
 
         try {
-            Class.forName(class_);
-            connURL = "jdbc:sqlserver://" + ip + ";" + "databaseName=" + db + ";user=" + user + ";password=" + password + ";";
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            connURL = "jdbc:jtds:sqlserver://" + server_port +";databaseName=" + database + ";user=" + user + ";password=" + pass + ";";
 
             conn = DriverManager.getConnection(connURL);
         }

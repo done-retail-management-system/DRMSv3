@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
+<<<<<<< HEAD
     <solid android:color="#479A73" />
+=======
+    <solid android:color="#19bd52" />
+>>>>>>> POS
     <corners android:bottomRightRadius="30dp"
         android:bottomLeftRadius="30dp"
         android:topRightRadius="30dp"
