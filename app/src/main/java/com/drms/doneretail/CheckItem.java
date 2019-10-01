@@ -29,10 +29,12 @@ public class CheckItem{
             conn = new SqlConnection();
             connect = conn.Conn();
 
+
             if (connect == null){
                 check = "Check your internet Access";
             }
             else{
+
                 String sqlQuery = "select * from salesTbl where barcodes = 5449000172167";
                 Statement stmt = connect.createStatement();
                 ResultSet set = stmt.executeQuery(sqlQuery);

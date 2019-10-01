@@ -13,8 +13,15 @@ import java.sql.SQLException;
 public class SqlConnection {
 
     String server_port, database,user,pass;
+    
+    public SqlConnection() {
+
+    }
+
+
 
     @SuppressLint("NewApi")
+
     public Connection Conn(){
         server_port = "drms.database.windows.net";
         database = "DRMS";
