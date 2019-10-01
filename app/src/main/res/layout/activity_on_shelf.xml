@@ -79,7 +79,7 @@
                 android:layout_marginBottom="50dp"
                 android:scrollbars="none">
 
-            <include layout="@layout/activity_recycler_category_shimmer" />
+
          </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
 
             <TextView

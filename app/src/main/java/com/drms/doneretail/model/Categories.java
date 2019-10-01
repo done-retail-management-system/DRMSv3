@@ -1,4 +1,10 @@
-package com.drms.doneretail;
+/*-----------------------------------------------------------------------------
+ - Developed by Haerul Muttaqin                                               -
+ - Last modified 3/17/19 5:24 AM                                              -
+ - Subscribe : https://www.youtube.com/haerulmuttaqin                         -
+ - Copyright (c) 2019. All rights reserved                                    -
+ -----------------------------------------------------------------------------*/
+package com.drms.doneretail.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -18,7 +24,6 @@ public class Categories {
     public void setCategories(List<Category> categories) {
         this.categories = categories;
     }
-
 
     public static class Category {
 
