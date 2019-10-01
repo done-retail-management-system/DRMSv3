@@ -18,6 +18,26 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorPrimary">
+            </View>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerHeader"
+                android:foregroundGravity="center"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:layout_below="@+id/cardSearch"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </androidx.viewpager.widget.ViewPager>
+
+            <include android:id="@+id/shimmerMeal"
+                layout="@layout/item_view_pager_header_shimmer" />
+
 
             <TextView
                 android:id="@+id/title"
@@ -26,10 +46,12 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="Products Out of Stock"
+                android:text="PRODUCTS OUT-OF-STOCK"
                 android:textColor="#ffffff"
                 android:textSize="30dp"
-                android:textStyle="bold" /> <!-- TextView For the Title of the Page -->
+                android:textStyle="bold"/>
+
+            <!-- TextView For the Title of the Page -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardSearch"
                 android:layout_width="match_parent"
@@ -59,11 +81,11 @@
                 android:id="@+id/titleCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cardSearch"
+                android:layout_below="@id/viewPagerHeader"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="16dp"
-                android:text="Product Categories"
+                android:text="PRODUCT CATEGORIES"
                 android:textColor="#ffffff"
                 android:textSize="19sp"
                 android:textStyle="bold" /> <!-- TextView For Categories -->
@@ -79,10 +101,10 @@
                 android:layout_marginBottom="50dp"
                 android:scrollbars="none">
 
-                <include layout="@layout/activity_recycler_category_shimmer" />//shimmer the
-                categories
 
             </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
+            <include android:id="@+id/shimmerCategory"
+                layout="@layout/item_recycler_category_shimmer"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
