@@ -1,105 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="in_stock">
-<androidx.core.widget.NestedScrollView
-    android:fillViewport="true"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
-    <RelativeLayout
-        android:id="@+id/headerView"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="300dp">
-    <TextView
-        android:id="@+id/title"
-        android:textColor="@color/colorPrimary"
-        android:text="Products In-Stock"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/> <!-- TextView For the Title of the Page -->
+    tools:context=".on_shelf">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardSearch"
-        android:layout_below="@+id/title"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="15dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="0dp">
-        <TextView
+        android:layout_height="match_parent"
+        android:background="#1d858f"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/headerView"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:padding="10dp"
-            android:text="=Search your Category"
-            android:textColor="@color/colorAccent"
-            android:gravity="center_vertical"
-            android:drawableLeft="@drawable/ic_search"
-            android:drawableStart="@drawable/ic_search_primary_light"
-            android:drawablePadding="10dp"
-            />
-    </androidx.cardview.widget.CardView> <!-- Created Card View for the Search Bar -->
+            android:layout_height="300dp"
+            android:orientation="vertical">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPagerHeader"
-        android:foregroundGravity="center"
-        android:clipToPadding="false"
-        android:overScrollMode="never"
-        android:layout_below="@id/cardSearch"
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp">
-    </androidx.viewpager.widget.ViewPager> <!-- ViewPager for the different views between the cardview and the Textview -->
-    <include layout="@layout/activity_view_pager_header_shimmer"/>//view header
-    <TextView
-        android:id="@+id/titleCategory"
-        android:text="Product Categories"
-        android:textSize="19sp"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/viewPagerHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/> <!-- TextView For Categories -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:text="Products In Stock "
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold" /> <!-- TextView For the Title of the Page -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCategory"
-        android:scrollbars="none"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/titleCategory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="50dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_search_primary_light"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="#ffffff" />
+            </androidx.cardview.widget.CardView> <!-- Created Card View for the Search Bar -->
 
-<include layout="@layout/activity_recycler_category_shimmer"/>//shimmer the categories
 
-    </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
-    <TextView
-        android:padding="10dp"
-        android:gravity="center"
-        android:textColor="@color/design_default_color_primary"
-        android:text="@string/app_name"
-        android:background="@color/colorAccent"/>
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/>
-    </RelativeLayout>
-</androidx.core.widget.NestedScrollView>
-</android.support.design.widget.CoordinatorLayout>
+
+            <TextView
+                android:id="@+id/titleCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardSearch"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:text="Product Categories"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:textStyle="bold" /> <!-- TextView For Categories -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleCategory"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="50dp"
+                android:scrollbars="none">
+
+                <include layout="@layout/activity_recycler_category_shimmer" />//shimmer the
+                categories
+
+            </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="#1d858f" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
