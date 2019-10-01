@@ -34,7 +34,7 @@ public class SqlConnection {
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-        connURL = 
+        connURL = "jdbc:jtds:sqlserver://drms.database.windows.net:1433;database=DRMS;user=adminDRMS@drms;password=Thapelo@05;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
 
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
