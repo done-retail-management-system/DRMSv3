@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements DashCap.onDashLis
         }// Loop for items on the dash
 
         recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
-        cap = new DashCap(dashList);
+        cap = new DashCap(dashList, this);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(cap);
     }

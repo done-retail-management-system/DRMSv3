@@ -16,17 +16,18 @@ import java.util.ArrayList;
 public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
 
     ArrayList<DataS> dashlist;
+    private onDashListner onDashListner;
 
 
-
-    public DashCap(ArrayList<DataS> dashList) {
+    public DashCap(ArrayList<DataS> dashList ,onDashListner onDashListner){
         this.dashlist = dashlist;
+        this.onDashListner = onDashListner;
     }
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_items, parent,false);
-        return new ViewHolder(view);
+        return new ViewHolder(view, onDashListner);
     }
 
     @Override
@@ -43,16 +44,20 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
         return dashlist.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView top;
         ImageView pic;
         View myView;
+        onDashListner onDashListner;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView,onDashListner onDashListner) {
             super(itemView);
             myView = itemView;
+            itemView.setOnClickListener(this);
+            this.onDashListner = onDashListner;
         }
+
 
         public void setHeader(String h)
         {
@@ -66,6 +71,10 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
             pic.setImageResource(i);
         }
 
+        @Override
+        public void onClick(View view) {
+            onDashListner.OnActClick(getAdapterPosition());
+        }
     }
     public interface onDashListner {
         void OnActClick(int position );
