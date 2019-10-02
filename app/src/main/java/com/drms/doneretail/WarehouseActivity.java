@@ -18,8 +18,8 @@ import java.util.Calendar;
 public class WarehouseActivity extends AppCompatActivity {
 
 
-    private Button button;
-    private ImageButton button1;
+
+    private ImageButton button;
     private MediaPlayer mediaPlayer;
 
     @Override
@@ -43,8 +43,8 @@ public class WarehouseActivity extends AppCompatActivity {
         //textViewDate.setText(currentDate);
         //button = button.findViewById(R.id.btn_stock);
 
-        button1 = (ImageButton) findViewById(R.id.imageButton1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button = (ImageButton) findViewById(R.id.imageButton1);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openStockActivity();
@@ -52,7 +52,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.imageButton1);
+        button = (ImageButton) findViewById(R.id.imageButton2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,7 +61,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.imageButton3);
+        button = (ImageButton) findViewById(R.id.imageButton3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +70,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.imageButton4);
+        button = (ImageButton) findViewById(R.id.imageButton4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
