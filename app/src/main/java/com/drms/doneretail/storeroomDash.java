@@ -2,6 +2,7 @@ package com.drms.doneretail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -16,7 +17,11 @@ public class storeroomDash extends AppCompatActivity {
 
 
     public void checkIn(View view) {
-        Toast.makeText(getApplicationContext(),"I work from Checkin",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Starting Check-in process",Toast.LENGTH_LONG).show();
+
+        startActivity(new Intent(getApplicationContext(), ScannerBarcode.class));
+        
+
 
     }
 
