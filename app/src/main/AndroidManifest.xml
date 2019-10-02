@@ -16,12 +16,8 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".recycler_category_shimmer" />
         <activity android:name=".out_of_stock" />
-        <activity android:name=".in_stock" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+        <activity android:name=".in_stock" />
+
 
         <activity android:name=".on_shelf"/>
 
