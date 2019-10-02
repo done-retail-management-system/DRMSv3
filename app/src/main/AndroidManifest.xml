@@ -52,7 +52,7 @@
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
 
         <activity android:name=".ScannerBarcode"></activity>
         <activity android:name=".POS_Activity">
