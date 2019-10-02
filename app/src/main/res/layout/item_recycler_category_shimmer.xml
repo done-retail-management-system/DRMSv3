@@ -39,7 +39,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/alcoholic_drink_1_" />
+                        android:src="@drawable/alcoholic_drink_1_"
+                        />
 
                     <View
                         android:layout_width="match_parent"
