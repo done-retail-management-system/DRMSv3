@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/alcoholic_drink_1_" />
 
                     <View
                         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/milk" />
 
                     <View
                         android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/cereals" />
 
                     <View
                         android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/abc_block" />
 
                     <View
                         android:layout_width="match_parent"
@@ -191,7 +191,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/toiletry" />
 
                     <View
                         android:layout_width="match_parent"
@@ -227,7 +227,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/ic_circle" />
+                        android:src="@drawable/products" />
 
                     <View
                         android:layout_width="match_parent"
