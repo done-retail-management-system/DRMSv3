@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.Image;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         dashModelArrayList = new ArrayList<>();
         String heads[] = {"Warehouse Management", "Store Room Management", "Shelf Management", "Point of Sale", "Settings"};
         int Images[] = {R.drawable.warehousing, R.drawable.stock, R.drawable.shelf, R.drawable.pos, R.drawable.logo};
+
 
         for(int i = 0; i < heads.length; i++)
         {
