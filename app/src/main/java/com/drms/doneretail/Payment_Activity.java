@@ -29,6 +29,6 @@ public class Payment_Activity extends AppCompatActivity {
 
         Adapter_Pager adapter = new Adapter_Pager(getSupportFragmentManager(),tab.getTabCount());
         pager.setAdapter(adapter);
-        pager.addOnAdapterChangeListener((ViewPager.OnAdapterChangeListener) new TabLayout.TabLayoutOnPageChangeListener(tab));
+        pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tab));
     }
 }
