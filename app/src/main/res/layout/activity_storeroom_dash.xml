@@ -42,7 +42,9 @@
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
                         android:background="#B58B9116"
-                        android:orientation="vertical">
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:onClick="checkIn">
 
                         <ImageView
                             android:id="@+id/CheckinImage"
@@ -65,6 +67,7 @@
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
                         android:background="#B5626842"
+                        android:clickable="true"
                         android:orientation="vertical">
 
                         <ImageView
@@ -96,6 +99,7 @@
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
                         android:background="#B5163F91"
+                        android:clickable="true"
                         android:orientation="vertical">
 
                         <ImageView
