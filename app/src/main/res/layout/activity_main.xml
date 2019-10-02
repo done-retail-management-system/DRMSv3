@@ -40,10 +40,10 @@
                         android:layout_width="0dp"
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
-                        android:background="#B58B9116"
+                        android:background="#B5700FF0"
                         android:clickable="true"
-                        android:orientation="vertical"
-                        android:onClick="warehouse">
+                        android:onClick="warehouse"
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/WarehouseImage"
@@ -65,11 +65,10 @@
                         android:layout_width="0dp"
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
-                        android:background="#B5626842"
+                        android:background="#A9B0DD"
                         android:clickable="true"
-                        android:orientation="vertical"
                         android:onClick="store"
-                        >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/storeImage"
@@ -99,24 +98,23 @@
                         android:layout_width="0dp"
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
-                        android:background="#B5163F91"
+                        android:background="#B5911639"
                         android:clickable="true"
-                        android:orientation="vertical"
                         android:onClick="shelf"
-                        >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/shelfImage"
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
-                            android:contentDescription="Stock Tab"
+                            android:contentDescription="shelf Tab"
                             app:srcCompat="@drawable/shelf" />
 
                         <TextView
                             android:id="@+id/textView2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="STOCK"
+                            android:text="SHELF MANAGEMENT"
                             android:textAlignment="center" />
                     </LinearLayout>
 
@@ -125,11 +123,10 @@
                         android:layout_width="0dp"
                         android:layout_height="220dp"
                         android:layout_weight="1.5"
-                        android:background="#B5163F91"
+                        android:background="#B5911620"
                         android:clickable="true"
-                        android:orientation="vertical"
                         android:onClick="pos"
-                        >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/posImage"
