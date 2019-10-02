@@ -1,22 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreditCardFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="64dp"
+        android:layout_height="78dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="266dp"
-        android:layout_marginTop="424dp"
-        android:layout_marginEnd="564dp"
-        android:layout_marginBottom="112dp"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="522dp"
+        android:text="Credit Card Form"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="505dp"
+        app:cardBackgroundColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="115dp"
+        android:layout_height="87dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="845dp"
+        android:layout_marginBottom="513dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="411dp"
+        android:layout_marginBottom="432dp"
+        android:paddingLeft="10dp"
+        android:text="Card Number"
+        android:textAlignment="viewStart"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtCard_Number"
+        android:layout_width="385dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="363dp"
+        android:background="@drawable/oval_corners"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="238dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="413dp"
+        android:layout_marginBottom="315dp"
+        android:paddingLeft="10dp"
+        android:text="Name on Card"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="388dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="246dp"
+        android:background="@drawable/oval_corners"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="174dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="184dp"
+        android:text="Security Code"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="168dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="472dp"
+        android:layout_marginBottom="185dp"
+        android:text="Expiry Date"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="492dp"
+        android:layout_marginBottom="131dp"
+        android:background="@drawable/oval_corners"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="173dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="293dp"
+        android:layout_marginBottom="129dp"
+        android:background="@drawable/oval_corners"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="266dp"
+        android:layout_height="31dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="372dp"
+        android:layout_marginBottom="81dp"
+        android:text="Zip Code"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/oval_corners"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="701dp"
+        android:layout_marginBottom="557dp"
+        android:text="Button" />
 
 </RelativeLayout>
