@@ -23,7 +23,7 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_shelf__dash, parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_items, parent,false);
         return new ViewHolder(view);
     }
 

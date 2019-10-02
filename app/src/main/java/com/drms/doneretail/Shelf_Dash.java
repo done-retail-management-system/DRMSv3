@@ -14,7 +14,7 @@ public class Shelf_Dash extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shelf__dash);
+        setContentView(R.layout.activity_list_items);
         //Define Cards
         instock = (CardView) findViewById(R.id.instock);
 
