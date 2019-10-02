@@ -20,7 +20,7 @@ public class storeroomDash extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Starting Check-in process",Toast.LENGTH_LONG).show();
 
         startActivity(new Intent(getApplicationContext(), ScannerBarcode.class));
-        
+
 
 
     }
