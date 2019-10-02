@@ -2,6 +2,7 @@ package com.drms.doneretail;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +36,6 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent storeIntent = new Intent(this, storeroomDash.class);
         startActivity(storeIntent);
-        Toast.makeText(getApplicationContext(), "Welcome to Storeroom Management", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Welcome to Storeroom Management", Toast.LENGTH_LONG).show();  
     }
 }

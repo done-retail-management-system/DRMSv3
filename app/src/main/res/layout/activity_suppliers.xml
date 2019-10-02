@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".SuppliersActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="628dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="406dp"
+        android:text="See List of Suppliers Below"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/add_new"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="487dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/button_properties"
+        android:text="Add new supplier"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="735dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/button_properties"
+        android:text="Remove Supplier"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="233dp"
+        android:layout_marginEnd="549dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/button_properties"
+        android:text="Edit Supplier Details"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="476dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="477dp"
+        android:layout_marginBottom="402dp"
+        android:background="@drawable/search_bar"
+        android:drawableStart="@android:drawable/ic_search_category_default"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="322dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/searchBar"
+        android:choiceMode="multipleChoice" />
+
+
+
+
+
+</RelativeLayout>

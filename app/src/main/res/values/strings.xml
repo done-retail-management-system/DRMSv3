@@ -10,4 +10,40 @@
     <string name="POS">Point Of Sale</string>
     <string name="Shelf">Shelf Management</string>
     <string name="Store">Store Room Management</string>
+
+    <!--Warehouse strings-->
+    <string name="string_Pending">Pending Orders</string>
+    <string name="string_received">Store Orders</string>
+    <string name="string_completed">Completed Orders</string>
+    <string name="string_shop">Shops</string>
+    <string name="string_order">Orders</string>
+    <string name="string_supplier">Suppliers</string>
+    <string name="stock_on_hand">Stock On hand</string>
+    <string name="stock">Stock</string>
+    <string name="returned_stock">Stock Returned</string>
+    <string name="text_string">Please select an option</string>
+
+    <string name="summary">Dashboard</string>
+    <string name="new_order">New Orders</string>
+    <string name="completed_order">Completed Orders</string>
+
+    <string name="stock_item">Add stock item</string>
+    <string name="delete_item">Remove stock item</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--For Category Spinner-->
+    <string name="categoryType1">Praise</string>
+    <string name="categoryType2">Gripe</string>
+    <string name="categoryType3">Suggestion</string>
+    <string name="categoryType4">Bug</string>
+
+    <!--For Type Spinner-->
+    <string name="Type1">Praise</string>
+    <string name="Type2">Gripe</string>
+    <string name="Type3">Suggestion</string>
+    <string name="Type4">Bug</string>
+    <string name="search">Search</string>
+
 </resources>
