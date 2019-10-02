@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".POS_Activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="871dp"
+        android:layout_marginBottom="460dp"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/empl_name_surname"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="662dp"
+        android:layout_marginBottom="556dp"
+        android:text="Charles Marps"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="974dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="-7dp"
+        android:layout_marginBottom="461dp"
+        app:cardBackgroundColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/txtHours"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="633dp"
+        android:layout_marginBottom="514dp"
+        android:text="Hours Remaining"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#009688"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="464dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtTill"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="708dp"
+        android:layout_marginBottom="477dp"
+        android:text="Till Nimber"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#009688"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/list_Cart"
+        android:layout_width="wrap_content"
+        android:layout_height="399dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="476dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:cacheColorHint="#A9E4DE"
+        android:divider="@color/colorPrimary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="480dp"
+        android:layout_marginBottom="387dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:textAlignment="center"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="542dp"
+        android:layout_marginBottom="410dp"
+        android:text="Scan Item"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="892dp"
+        android:layout_marginBottom="385dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="778dp"
+        android:layout_marginBottom="419dp"
+        android:text="Delete Item"
+        android:textAllCaps="true"
+        android:textColor="#009688"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="487dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/ic_launcher_background"
+        app:cardBackgroundColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="112dp"
+        android:text="Sub Total (Excluding tax):"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="409dp"
+        android:layout_marginBottom="73dp"
+        android:text="Tax:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="28dp"
+        android:text="Total (Including Tax):"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="11dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Grand Total"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="71dp"
+        android:hint="Tax Amount"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="115dp"
+        android:hint="Total"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="202dp"
+        android:layout_height="245dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="154dp"
+        app:srcCompat="@drawable/order" />
+
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="357dp"
+        android:hint="Item Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="307dp"
+        android:hint="Category"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="202dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="261dp"
+        android:hint="Expiry Date"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="205dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="218dp"
+        android:hint="Price"
+        android:textAlignment="center"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/roundbutton"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="10dp"
+        android:text="Pay"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtSearch"
+        android:layout_width="394dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="405dp"
+        android:background="@drawable/round_text"
+        android:drawablePadding="80dp"
+        android:hint="Search"
+        android:paddingLeft="60dp"
+        android:paddingTop="5dp"
+        android:textAlignment="textStart"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="410dp"
+        android:layout_marginBottom="401dp"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+</RelativeLayout>
