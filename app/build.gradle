@@ -38,4 +38,3 @@ dependencies {
     implementation project(':jtds-1.2.7')
 }
 
-

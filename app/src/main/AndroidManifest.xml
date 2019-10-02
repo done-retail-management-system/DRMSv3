@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.drms.doneretail">
 
-    <supports-screens
-        android:normalScreens="true" />
+    <supports-screens android:normalScreens="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -21,15 +20,12 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-
-        <activity android:name=".AddNewStock">
-
-
-        </activity>
-        <activity android:name=".ScanActivity">
-
-
-        </activity>
+        <activity android:name=".Checkin"></activity>
+ 
+        <activity android:name=".AddNewStock"> </activity>
+          
+        <activity android:name=".ScanActivity"></activity> 
+          
         <activity
             android:name=".ShopsActivity"
             android:parentActivityName=".WarehouseActivity">
@@ -44,30 +40,26 @@
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
 
-        <activity android:name=".WarehouseActivity">
-
-        </activity>
+        <activity android:name=".WarehouseActivity"></activity>
 
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
 
         <activity android:name=".MainActivity">
-
-        <activity android:name=".ScannerBarcode"></activity>
-        <activity android:name=".POS_Activity">
-
-            <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <activity android:name=".ScannerBarcode"></activity>
+      
+        <activity android:name=".POS_Activity"/>
 
-
-        <activity android:name=".MainActivity" />
-
+        <activity android:name=".storeroomDash" />
+      
         <activity android:name=".LoginActivity" />
     </application>
 
