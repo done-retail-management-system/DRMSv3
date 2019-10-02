@@ -70,21 +70,23 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="86dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="448dp">
+        android:layout_marginBottom="448dp"
+        app:tabGravity="center"
+        app:tabIconTint="@color/common_google_signin_btn_text_dark_focused"
+        app:tabIndicatorColor="@color/wallet_bright_foreground_holo_light"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:tabTextColor="@color/design_default_color_primary_dark">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monday" />
+            android:text="QR Scanner (PayPal)" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="Credit Card" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wednesday" />
     </com.google.android.material.tabs.TabLayout>
 </RelativeLayout>
