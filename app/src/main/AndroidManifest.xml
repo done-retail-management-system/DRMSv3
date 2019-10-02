@@ -27,25 +27,19 @@
         <activity
             android:name=".ShopsActivity"
             android:parentActivityName=".WarehouseActivity">
-
-
         </activity>
+
         <activity
             android:name=".SuppliersActivity"
             android:parentActivityName=".WarehouseActivity">
-
-
         </activity>
+
         <activity
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
 
         <activity android:name=".WarehouseActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -53,7 +47,11 @@
             android:parentActivityName=".WarehouseActivity" />
 
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".LoginActivity" />

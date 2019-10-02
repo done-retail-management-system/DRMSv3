@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#377f77</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#18786D</color>
+    <color name="colorPrimaryDark">#B0D3CE</color>
+    <color name="colorAccent">#D81B34</color>
 
 
     <!--Warehouse resources-->
