@@ -26,6 +26,7 @@ public class POS_Activity extends AppCompatActivity{
     ListView item_cart;
     FloatingActionButton scan_item;
     SimpleAdapter adapt;
+    Button pay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class POS_Activity extends AppCompatActivity{
 
         item_cart = findViewById(R.id.list_Cart);
         scan_item = findViewById(R.id.btnScan);
+        pay = findViewById(R.id.btnPayment);
         scan_item.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -53,6 +55,13 @@ public class POS_Activity extends AppCompatActivity{
                 adapt = new SimpleAdapter(POS_Activity.this,data,R.layout.listview,retrieve_From,viewLocation);
 
                 item_cart.setAdapter(adapt);
+            }
+        });
+        pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Payment_Activity.class);
+                startActivity(intent);
             }
         });
 

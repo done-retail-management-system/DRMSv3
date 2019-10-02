@@ -79,11 +79,13 @@
         app:tabTextColor="@color/design_default_color_primary_dark">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabQR"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QR Scanner (PayPal)" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCredit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Credit Card" />
