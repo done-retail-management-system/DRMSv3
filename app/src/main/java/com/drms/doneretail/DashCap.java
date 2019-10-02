@@ -17,6 +17,8 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
 
     ArrayList<DataS> dashlist;
 
+    
+
     public DashCap(ArrayList<DataS> dashList) {
         this.dashlist = dashlist;
     }
