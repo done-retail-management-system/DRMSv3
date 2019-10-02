@@ -5,9 +5,10 @@ import androidx.recyclerview.widget.GridLayoutManager; // Help Store my list
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DashCap.onDashListner {
 
     ArrayList<DataS>dashList;
     RecyclerView recyclerView;
@@ -36,5 +37,12 @@ public class MainActivity extends AppCompatActivity {
         cap = new DashCap(dashList);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(cap);
+    }
+
+    @Override
+    public void OnActClick(int position) {
+        dashList.get(position);
+        Intent intent = new Intent();
+        startActivity(intent);
     }
 }

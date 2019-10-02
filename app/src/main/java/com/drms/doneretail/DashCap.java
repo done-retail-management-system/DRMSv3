@@ -17,7 +17,7 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
 
     ArrayList<DataS> dashlist;
 
-    
+
 
     public DashCap(ArrayList<DataS> dashList) {
         this.dashlist = dashlist;
@@ -65,5 +65,9 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
             pic = myView.findViewById(R.id.image_id);
             pic.setImageResource(i);
         }
+
+    }
+    public interface onDashListner {
+        void OnActClick(int position );
     }
 }
