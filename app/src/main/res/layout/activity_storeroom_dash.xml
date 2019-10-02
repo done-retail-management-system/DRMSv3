@@ -54,7 +54,7 @@
                             app:srcCompat="@drawable/checkin" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/textView4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="CHECK-IN"
@@ -68,7 +68,9 @@
                         android:layout_weight="1.5"
                         android:background="#B5626842"
                         android:clickable="true"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="orders"
+                        >
 
                         <ImageView
                             android:id="@+id/ordersimage"
@@ -100,7 +102,9 @@
                         android:layout_weight="1.5"
                         android:background="#B5163F91"
                         android:clickable="true"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="stock"
+                        >
 
                         <ImageView
                             android:id="@+id/stockImage"

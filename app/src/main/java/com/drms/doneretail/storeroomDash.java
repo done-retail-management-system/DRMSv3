@@ -16,7 +16,15 @@ public class storeroomDash extends AppCompatActivity {
 
 
     public void checkIn(View view) {
-        Toast.makeText(getApplicationContext(),"I span",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"I work from Checkin",Toast.LENGTH_LONG).show();
 
+    }
+
+    public void orders(View view) {
+        Toast.makeText(getApplicationContext(),"I work from Orders",Toast.LENGTH_LONG).show();
+    }
+
+    public void stock(View view) {
+        Toast.makeText(getApplicationContext(),"I work from stock",Toast.LENGTH_LONG).show();
     }
 }
