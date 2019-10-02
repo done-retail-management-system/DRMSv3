@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.text.DateFormat;
@@ -18,6 +19,7 @@ public class WarehouseActivity extends AppCompatActivity {
 
 
     private Button button;
+    private ImageButton button1;
     private MediaPlayer mediaPlayer;
 
     @Override
@@ -41,8 +43,8 @@ public class WarehouseActivity extends AppCompatActivity {
         //textViewDate.setText(currentDate);
         //button = button.findViewById(R.id.btn_stock);
 
-        button = (Button) findViewById(R.id.btn_stock);
-        button.setOnClickListener(new View.OnClickListener() {
+        button1 = (ImageButton) findViewById(R.id.imageButton1);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openStockActivity();
@@ -50,7 +52,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.btn_order);
+        button = (Button) findViewById(R.id.imageButton1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +61,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.btn_supplier);
+        button = (Button) findViewById(R.id.imageButton3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +70,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.btn_shops);
+        button = (Button) findViewById(R.id.imageButton4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
