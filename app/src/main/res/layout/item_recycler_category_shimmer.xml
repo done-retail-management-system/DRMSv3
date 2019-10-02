@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/alcoholic_drink_1_"
+                        android:src="@drawable/cooldrink"
                         />
 
                     <View
@@ -76,7 +76,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/milk" />
+                        android:src="@drawable/dairy" />
 
                     <View
                         android:layout_width="match_parent"
@@ -112,7 +112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/cereals" />
+                        android:src="@drawable/breakfast" />
 
                     <View
                         android:layout_width="match_parent"
@@ -156,7 +156,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/abc_block" />
+                        android:src="@drawable/sauces" />
 
                     <View
                         android:layout_width="match_parent"
@@ -228,7 +228,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/products" />
+                        android:src="@drawable/toys" />
 
                     <View
                         android:layout_width="match_parent"
