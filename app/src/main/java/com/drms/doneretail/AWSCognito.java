@@ -18,22 +18,24 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+//Amazon Cognito lets you add user sign-up, sign-in, and access control
 
 public class AWSCognito {
+
+    //Declaration of variables to use on the attributes
     private static final String TAG = "AWS Cognito";
     private static AWSCognito awsCognito;
     private static CognitoUserPool userPool;
     private static String user;
     private static CognitoDevice newDevice;
+    private static List<ItemToDisplay> currDisplayedItems; //Created a List for Items
+    private static  int itemCount;
 
     private static List<String> attributeDisplaySeq;
     private static Map<String, String> signUpFieldsC2O;
     private static Map<String, String> signUpFieldsO2C;
     private static CognitoUserAttributes attributesChanged;
-    private static List<AttributeType> attributesToDelete;
-
-    private static List<ItemToDisplay> currDisplayedItems;
-    private static  int itemCount;
+    private static List<AttributeType> attributesToDelete; //Created a List for Attributes to delete
 
     private static List<ItemToDisplay> trustedDevices;
     private static int trustedDevicesCount;
@@ -41,23 +43,23 @@ public class AWSCognito {
     private static CognitoDevice thisDevice;
     private static boolean thisDeviceTrustState;
 
-    private static List<ItemToDisplay> firstTimeLogInDetails;
+
+
+    private static List<ItemToDisplay> mfaOptions;//Created a List for items to Display and the Options
+    private static List<String> mfaAllOptionsCode;
+
+    private static List<ItemToDisplay> firstTimeLogInDetails; //Created a List for FIRST TIME LOGIN
     private static Map<String, String> firstTimeLogInUserAttributes;
     private static List<String> firstTimeLogInRequiredAttributes;
     private static int firstTimeLogInItemsCount;
     private static Map<String, String> firstTimeLogInUpDatedAttributes;
     private static String firstTimeLoginNewPassword;
 
-    private static List<ItemToDisplay> mfaOptions;
-    private static List<String> mfaAllOptionsCode;
-
+    //
     private static final String userPoolId = "us-east-2_wqOUvI6lL";
-
     private static final String clientId = "70c3bvo3mqpuveu0vi7vegjl68";
-
     private static final String clientSecret = "1bcp6ok3tsnrsga3ekc0u8gh4dtl1pil6lj0m6mgj3r6429oehi5";
-
-    private static final Regions cognitoRegion = Regions.US_EAST_2;
+    private static final Regions cognitoRegion = Regions.US_EAST_2; // Cognito Region(location)
 
     // User details from the service
     private static CognitoUserSession currSession;
@@ -316,7 +318,7 @@ public class AWSCognito {
             }
         }
     }
-
+// Device Details
     public static CognitoDevice getDeviceDetail(int position) {
         if (position <= trustedDevicesCount) {
             return deviceDetails.get(position);
@@ -325,6 +327,7 @@ public class AWSCognito {
         }
     }
 
+    // setOptions
     public static void setMfaOptionsForDisplay(List<String> options, Map<String, String> parameters) {
         mfaAllOptionsCode = options;
         mfaOptions = new ArrayList<ItemToDisplay>();
@@ -365,8 +368,6 @@ public class AWSCognito {
     public static int getMfaOptionsCount() {
         return mfaOptions.size();
     }
-
-    //public static
 
     public static CognitoDevice getNewDevice() {
         return newDevice;

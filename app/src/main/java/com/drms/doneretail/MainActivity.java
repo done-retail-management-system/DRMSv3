@@ -5,6 +5,13 @@ import androidx.recyclerview.widget.GridLayoutManager; // Help Store my list
 import androidx.recyclerview.widget.RecyclerView;
 
 
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
@@ -39,10 +46,28 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(cap);
     }
 
-    /*@Override
-    public void OnActClick(int position) {
-        dashList.get(position);
-        Intent intent = new Intent();
-        startActivity(intent);
-    }*/
+
+    public void warehouse(View view) {
+        Toast.makeText(getApplicationContext(), "I work from WAREHOUSE", Toast.LENGTH_LONG).show();
+    }
+
+    public void store(View view) {
+        openStoreroom();
+    }
+
+    public void shelf(View view) {
+        Toast.makeText(getApplicationContext(), "I work from SHELF", Toast.LENGTH_LONG).show();
+    }
+
+    public void pos(View view) {
+        Toast.makeText(getApplicationContext(), "I work from POS", Toast.LENGTH_LONG).show();
+    }
+
+    public void openStoreroom()
+    {
+        Intent storeIntent = new Intent(this, storeroomDash.class);
+        startActivity(storeIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Storeroom Management", Toast.LENGTH_LONG).show();  
+    }
+
 }

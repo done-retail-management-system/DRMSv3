@@ -30,10 +30,10 @@ import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.ForgotPas
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
+//
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText userText;
+  /**  private EditText userText;
     private EditText passText;
 
     private String username;
@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
     private ForgotPasswordContinuation forgotPasswordContinuation;
     private NewPasswordContinuation newPasswordContinuation;
     private ChooseMfaContinuation mfaOptionsContinuation;
-    private final String TAG="LoginActivity";
+    private final String TAG ="LoginActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -190,7 +190,9 @@ public class LoginActivity extends AppCompatActivity {
     // Forgot password processing
     public void forgotPassword(View view) {
         forgotpasswordUser();
-    }
-    */
+
+    }*/
+
+
 
 }

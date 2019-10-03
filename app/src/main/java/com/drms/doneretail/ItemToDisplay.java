@@ -1,23 +1,22 @@
 package com.drms.doneretail;
-
+// Items to display on the login screen
 public class ItemToDisplay {
-    // Text for display
-    private String labelText;
-    private String dataText;
-    private String messageText;
 
     // Display text colors
     private int labelColor;
     private int dataColor;
     private int messageColor;
-
-    // Data box background
-    private int dataBackground;
+    // Text for display
+    private String labelText;
+    private String dataText;
+    private String messageText;
 
     // Data box drawable
     private String dataDrawable;
 
-    // Constructor
+    // Data box background
+    private int dataBackground;
+    // Constructor to display
     protected ItemToDisplay(String labelText, String dataText, String messageText,
                             int labelColor, int dataColor, int messageColor,
                             int dataBackground, String dataDrawable) {
@@ -30,6 +29,9 @@ public class ItemToDisplay {
         this.dataBackground = dataBackground;
         this.dataDrawable = dataDrawable;
     }
+
+
+
 
     public String getLabelText() {
         return labelText;
