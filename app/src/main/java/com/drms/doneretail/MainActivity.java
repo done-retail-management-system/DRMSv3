@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void pos(View view) {
-        Toast.makeText(getApplicationContext(), "I work from POS", Toast.LENGTH_LONG).show();
+        openPOS();
+       // Toast.makeText(getApplicationContext(), "I work from POS", Toast.LENGTH_LONG).show();
     }
 
     public void openStoreroom()
@@ -55,11 +56,20 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Welcome to Storeroom Management", Toast.LENGTH_LONG).show();  
     }
 
+
+    public void openPOS()
+    {
+        Intent POSIntent = new Intent(this, POS_Activity.class);
+        startActivity(POSIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Point Of Sale", Toast.LENGTH_LONG).show();
+    }
+
     public void openWarehouse()
     {
         Intent wareIntent = new Intent(this, WarehouseActivity.class);
         startActivity(wareIntent);
         Toast.makeText(getApplicationContext(), "Welcome to Warehouse Management", Toast.LENGTH_LONG).show();
     }
+
 
 }
