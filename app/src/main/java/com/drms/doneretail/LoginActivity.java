@@ -51,10 +51,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        AWSCognito.init(getApplicationContext());
-        initApp();
-        findCurrent();
+       // AWSCognito.init(getApplicationContext());
+       // initApp();
+        //findCurrent();
     }
+
+    /**
+     @param savedInstanceState
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -187,6 +190,9 @@ public class LoginActivity extends AppCompatActivity {
     // Forgot password processing
     public void forgotPassword(View view) {
         forgotpasswordUser();
+
     }*/
+
+
 
 }
