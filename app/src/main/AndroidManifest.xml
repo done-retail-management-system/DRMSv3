@@ -52,12 +52,7 @@
 
 
         <activity android:name=".MainActivity">
-              <intent-filter>
 
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity> 
          
 
@@ -73,7 +68,14 @@
 
         <activity android:name=".storeroomDash" />
       
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".recycler_category_shimmer" />
         <activity android:name=".out_of_stock"/>

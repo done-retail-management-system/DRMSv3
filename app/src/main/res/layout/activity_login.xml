@@ -80,6 +80,7 @@
         android:layout_marginTop="406dp"
         android:text="@string/login"
         android:visibility="visible"
+        android:onClick="start"
         tools:text="@string/login"
         tools:visibility="visible" />
 
