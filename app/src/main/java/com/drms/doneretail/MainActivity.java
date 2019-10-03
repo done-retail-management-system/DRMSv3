@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void warehouse(View view) {
-        Toast.makeText(getApplicationContext(), "I work from WAREHOUSE", Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(), "I work from WAREHOUSE", Toast.LENGTH_LONG).show();
+        openWarehouse();
     }
 
     public void store(View view) {
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
         Intent storeIntent = new Intent(this, storeroomDash.class);
         startActivity(storeIntent);
         Toast.makeText(getApplicationContext(), "Welcome to Storeroom Management", Toast.LENGTH_LONG).show();  
+    }
+
+    public void openWarehouse()
+    {
+        Intent wareIntent = new Intent(this, storeroomDash.class);
+        startActivity(wareIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Warehouse Management", Toast.LENGTH_LONG).show();
     }
 
 }
