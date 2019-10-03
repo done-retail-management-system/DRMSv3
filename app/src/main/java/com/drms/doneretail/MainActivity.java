@@ -16,19 +16,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
 
-<<<<<<< HEAD
+
 public class MainActivity extends AppCompatActivity {
 
-=======
->>>>>>> master
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-=======
 
->>>>>>> master
     }
 
 
@@ -61,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void openWarehouse()
     {
-        Intent wareIntent = new Intent(this, storeroomDash.class);
+        Intent wareIntent = new Intent(this, WarehouseActivity.class);
         startActivity(wareIntent);
         Toast.makeText(getApplicationContext(), "Welcome to Warehouse Management", Toast.LENGTH_LONG).show();
     }
