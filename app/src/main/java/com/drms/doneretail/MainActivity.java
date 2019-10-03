@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
-public class MainActivity extends AppCompatActivity implements DashCap.onDashListner {
+public class MainActivity extends AppCompatActivity {
 
     ArrayList<DataS>dashList;
     RecyclerView recyclerView;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements DashCap.onDashLis
         recyclerView = findViewById(R.id.rcyl);
 
         dashList = new ArrayList<>(); // set the Dashboard CardView
-        String top[] = {"Products In-Stock", "Products On Shelf", "Products Out-Of-Stock"};
+        String top[] = {"Stock On Hand", "Shelf Management", "o"};
         int pic[] = {R.drawable.instock, R.drawable.on_shelf, R.drawable.outofstock};
 
         for(int i = 0; i < top.length; i++)
@@ -34,15 +34,15 @@ public class MainActivity extends AppCompatActivity implements DashCap.onDashLis
         }// Loop for items on the dash
 
         recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
-        cap = new DashCap(dashList, this);
+        cap = new DashCap();
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(cap);
     }
 
-    @Override
+    /*@Override
     public void OnActClick(int position) {
         dashList.get(position);
         Intent intent = new Intent();
         startActivity(intent);
-    }
+    }*/
 }

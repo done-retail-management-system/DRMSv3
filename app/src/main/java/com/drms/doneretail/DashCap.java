@@ -19,7 +19,7 @@ public class DashCap extends RecyclerView.Adapter<DashCap.ViewHolder> {
     private onDashListner onDashListner;
 
 
-    public DashCap(ArrayList<DataS> dashList ,onDashListner onDashListner){
+    public DashCap(){
         this.dashlist = dashlist;
         this.onDashListner = onDashListner;
     }
