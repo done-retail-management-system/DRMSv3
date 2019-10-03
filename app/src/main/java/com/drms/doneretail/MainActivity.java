@@ -17,33 +17,11 @@ import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<DataS>dashList;
-    RecyclerView recyclerView;
-    DashCap cap; // an instance from the DashCap class
-    
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.rcyl);
 
-        dashList = new ArrayList<>(); // set the Dashboard CardView
-        String top[] = {"Stock On Hand", "Shelf Management", "o"};
-        int pic[] = {R.drawable.instock, R.drawable.on_shelf, R.drawable.outofstock};
-
-        for(int i = 0; i < top.length; i++)
-        {
-            DataS dataModel = new DataS();
-            dataModel.setTop(top[i]);
-            dataModel.setPic(pic[i]);
-            dashList.add(dataModel);
-        }// Loop for items on the dash
-
-        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
-        cap = new DashCap();
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(cap);
     }
 
 
@@ -56,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shelf(View view) {
-        Toast.makeText(getApplicationContext(), "I work from SHELF", Toast.LENGTH_LONG).show();
+        Intent shelfIntent = new Intent(this, list_Items.class);
+        startActivity(shelfIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Shelf Management", Toast.LENGTH_LONG).show();
     }
 
     public void pos(View view) {
