@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".storeroomDash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_weight="1"
+                    android:background="#78AFB4"
+                    app:srcCompat="@drawable/storeroom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/checkinLay"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="1.5"
+                        android:background="#B58B9116"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:onClick="checkIn">
+
+                        <ImageView
+                            android:id="@+id/CheckinImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Check In Tab"
+                            app:srcCompat="@drawable/checkin" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CHECK-IN"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/OrdersLay"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="1.5"
+                        android:background="#B5626842"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:onClick="orders"
+                        >
+
+                        <ImageView
+                            android:id="@+id/ordersimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:contentDescription="Check In Tab"
+                            app:srcCompat="@drawable/order" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ORDERS"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/stock"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="1.5"
+                        android:background="#B5163F91"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:onClick="stock"
+                        >
+
+                        <ImageView
+                            android:id="@+id/stockImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="Stock Tab"
+                            app:srcCompat="@drawable/stock" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="STOCK"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

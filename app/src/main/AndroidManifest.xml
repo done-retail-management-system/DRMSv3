@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.drms.doneretail">
 
-    <supports-screens
-        android:normalScreens="true" />
+    <supports-screens android:normalScreens="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -15,21 +14,20 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="DRMS"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
 
-        <activity android:name=".AddNewStock">
 
-
-        </activity>
-        <activity android:name=".ScanActivity">
-
-
-        </activity>
+        <activity android:name=".Checkin"></activity>
+ 
+        <activity android:name=".AddNewStock"> </activity>
+          
+        <activity android:name=".ScanActivity"></activity> 
+          
         <activity
             android:name=".ShopsActivity"
             android:parentActivityName=".WarehouseActivity">
@@ -44,31 +42,57 @@
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
 
-        <activity android:name=".WarehouseActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".WarehouseActivity"></activity>
+
 
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
 
-        <activity android:name=".MainActivity"/>
 
-        <activity android:name=".ScannerBarcode">
+        <activity android:name=".MainActivity">
+              <intent-filter>
 
-        </activity>
-        <activity android:name=".POS_Activity">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+         
+
+        <activity android:name=".Payment_Activity"></activity>
+        
+     
+       
+
+        <activity android:name=".ScannerBarcode"></activity>
+      
+        <activity android:name=".POS_Activity"/>
 
 
-        </activity>
-
-        <!--<activity android:name=".MainActivity" /> -->
-
+        <activity android:name=".storeroomDash" />
+      
         <activity android:name=".LoginActivity" />
+
+        <activity android:name=".recycler_category_shimmer" />
+        <activity android:name=".out_of_stock"/>
+        <activity android:name=".list_Items"/>
+
+        <activity android:name=".in_stock" />
+
+ 
+
+
+        <activity android:name=".on_shelf"/>
+
+        
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
     </application>
 
 </manifest>

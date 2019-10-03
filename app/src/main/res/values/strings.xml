@@ -1,4 +1,6 @@
+
 <resources>
+
     <string name="app_name">Done Retail</string>
     <string name="app_logo">Done Retail Management System</string>
     <string name="app_description">A sophisticated approach to supply chain and retail management</string>
@@ -10,6 +12,7 @@
     <string name="POS">Point Of Sale</string>
     <string name="Shelf">Shelf Management</string>
     <string name="Store">Store Room Management</string>
+
 
     <!--Warehouse strings-->
     <string name="string_Pending">Pending Orders</string>
@@ -45,5 +48,10 @@
     <string name="Type3">Suggestion</string>
     <string name="Type4">Bug</string>
     <string name="search">Search</string>
+
+
+
+    <string name="search_your_recipes">Search Product...</string>
+    <string name="meal_categories">Product Categories</string>
 
 </resources>
