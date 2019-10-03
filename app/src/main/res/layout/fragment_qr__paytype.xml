@@ -8,52 +8,18 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="479dp"
-        app:cardBackgroundColor="@color/colorPrimary" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="401dp"
-        android:layout_height="70dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="279dp"
-        android:layout_marginBottom="509dp"
-        android:text="QR Payment (PayPal)"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textSize="30sp" />
-
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="426dp"
+        android:layout_height="437dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="281dp"
-        android:layout_marginTop="134dp"
-        android:layout_marginEnd="268dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="88dp"
         android:src="@drawable/frame" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="156dp"
-        android:layout_height="104dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="804dp"
-        android:layout_marginBottom="496dp"
-        android:src="@drawable/logo" />
 
 </RelativeLayout>
