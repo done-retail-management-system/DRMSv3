@@ -15,12 +15,8 @@ import android.widget.Toast;
 import android.content.Intent;
 import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
-public class MainActivity extends AppCompatActivity {
 
-    ArrayList<DataS>dashList;
-    RecyclerView recyclerView;
-    DashCap cap; // an instance from the DashCap class
-    
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
