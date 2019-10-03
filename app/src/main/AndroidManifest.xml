@@ -42,11 +42,14 @@
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
 
+
         <activity android:name=".WarehouseActivity"></activity>
+
 
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
+
 
         <activity android:name=".MainActivity">
               <intent-filter>
@@ -66,6 +69,7 @@
         <activity android:name=".ScannerBarcode"></activity>
       
         <activity android:name=".POS_Activity"/>
+
 
         <activity android:name=".storeroomDash" />
       
