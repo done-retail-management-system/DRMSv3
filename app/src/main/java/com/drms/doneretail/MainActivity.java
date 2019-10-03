@@ -16,12 +16,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
 
+<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity {
 
+=======
+>>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     }
 
 
@@ -36,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shelf(View view) {
-        Toast.makeText(getApplicationContext(), "I work from SHELF", Toast.LENGTH_LONG).show();
+        Intent shelfIntent = new Intent(this, list_Items.class);
+        startActivity(shelfIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Shelf Management", Toast.LENGTH_LONG).show();
     }
 
     public void pos(View view) {
