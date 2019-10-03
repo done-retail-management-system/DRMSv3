@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_Activity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPayment_Method"
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignBottom="@+id/viewPayment_Method"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="514dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="93dp"
+        android:layout_height="88dp"
+        android:layout_alignEnd="@+id/toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="867dp"
+        android:layout_marginBottom="512dp"
+        app:srcCompat="@drawable/cardinuse" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="306dp"
+        android:layout_marginBottom="528dp"
+        android:text="Payment Method"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/paymentTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignBottom="@+id/viewPayment_Method"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="448dp"
+        app:tabGravity="center"
+        app:tabIconTint="@color/common_google_signin_btn_text_dark_focused"
+        app:tabIndicatorColor="@color/wallet_bright_foreground_holo_light"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:tabTextColor="@color/design_default_color_primary_dark">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QR Scanner (PayPal)" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+    </com.google.android.material.tabs.TabLayout>
+</RelativeLayout>

@@ -41,15 +41,15 @@
         android:textSize="24sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="974dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-7dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="138dp"
-        android:layout_marginEnd="-7dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginBottom="461dp"
         app:cardBackgroundColor="@color/colorPrimary" />
 
@@ -176,7 +176,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="487dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="154dp"
+        android:layout_marginBottom="153dp"
         android:background="@drawable/ic_launcher_background"
         app:cardBackgroundColor="@color/colorPrimary" />
 
@@ -224,8 +224,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="11dp"
-        android:editable="false"
+        android:clickable="false"
         android:ems="10"
+        android:enabled="false"
         android:hint="Grand Total"
         android:inputType="textPersonName"
         android:textAlignment="center"
@@ -253,7 +254,7 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="115dp"
         android:hint="Total"
-        android:textColor="@android:color/background_dark"
+        android:background="@drawable/round_text"
         android:textSize="18sp" />
 
     <ImageView
@@ -319,8 +320,8 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/payment"
-        android:layout_width="167dp"
+        android:id="@+id/btnPayment"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -332,23 +333,29 @@
         android:text="Pay"
         android:textAlignment="textStart"
         android:textSize="18sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic" /><![CDATA[
 
-    <TextView
+
+    >>>>>>> POS
+
+1
+
+    ]]>
+
+    <EditText
         android:id="@+id/txtSearch"
-        android:layout_width="394dp"
-        android:layout_height="44dp"
+        android:layout_width="392dp"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="405dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="407dp"
         android:background="@drawable/round_text"
-        android:drawablePadding="80dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
         android:hint="Search"
-        android:paddingLeft="60dp"
-        android:paddingTop="5dp"
-        android:textAlignment="textStart"
-        android:textSize="24sp" />
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -356,8 +363,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="410dp"
-        android:layout_marginBottom="401dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="408dp"
+        android:visibility="visible"
         app:srcCompat="@android:drawable/ic_search_category_default" />
 
 </RelativeLayout>

@@ -11,6 +11,7 @@
     <string name="Shelf">Shelf Management</string>
     <string name="Store">Store Room Management</string>
 
+
     <!--Warehouse strings-->
     <string name="string_Pending">Pending Orders</string>
     <string name="string_received">Store Orders</string>
@@ -45,5 +46,9 @@
     <string name="Type3">Suggestion</string>
     <string name="Type4">Bug</string>
     <string name="search">Search</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
