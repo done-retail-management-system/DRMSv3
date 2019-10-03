@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Welcome to Done Retail Management System", Toast.LENGTH_LONG).show();
     }
 
-    /**  private EditText userText;
+    private EditText userText;
     private EditText passText;
 
     private String username;
@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-       // AWSCognito.init(getApplicationContext());
+        AWSCognito.init(getApplicationContext());
        // initApp();
         //findCurrent();
     }
