@@ -45,8 +45,8 @@ public class POS_Activity extends AppCompatActivity{
 
             @Override
             public void onClick(View v) {
-               //startActivity(new Intent(getApplicationContext(), ScannerBarcode.class));
-                List<Map<String,String>> data = null;
+               startActivity(new Intent(getApplicationContext(), ScannerBarcode.class));
+               /* List<Map<String,String>> data = null;
                 CheckItem getData = new CheckItem();
                 data = getData.doInBackground();
 
@@ -54,7 +54,7 @@ public class POS_Activity extends AppCompatActivity{
                 int[] viewLocation = new int[]{R.id.txtID, R.id.txtdate, R.id.txtTotal};
                 adapt = new SimpleAdapter(POS_Activity.this,data,R.layout.listview,retrieve_From,viewLocation);
 
-                item_cart.setAdapter(adapt);
+                item_cart.setAdapter(adapt);*/
             }
         });
         pay.setOnClickListener(new View.OnClickListener() {

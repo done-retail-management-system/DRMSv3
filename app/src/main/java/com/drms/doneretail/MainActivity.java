@@ -1,40 +1,41 @@
 package com.drms.doneretail;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+
+import android.content.Intent;
 import android.os.Bundle;
-
-import java.util.ArrayList;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    ArrayList<modelData> dashModelArrayList;
-    RecyclerView recyclerView;
-    dashAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.rvl);
+    }
 
-        dashModelArrayList = new ArrayList<>();
-        String heads[] = {"Warehouse Management", "Store Room Management", "Shelf Management", "Point of Sale", "Settings"};
-        int Images[] = {R.drawable.warehousing, R.drawable.stock, R.drawable.shelf, R.drawable.pos, R.drawable.logo};
+    public void warehouse(View view) {
+        Toast.makeText(getApplicationContext(), "I work from WAREHOUSE", Toast.LENGTH_LONG).show();
+    }
 
-        for(int i = 0; i < heads.length; i++)
-        {
-            modelData dataModel = new modelData();
-            dataModel.setHead(heads[i]);
-            dataModel.setImage(Images[i]);
-            dashModelArrayList.add(dataModel);
-        }
+    public void store(View view) {
+        openStoreroom();
+    }
 
-        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
-        adapter = new dashAdapter(dashModelArrayList);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(adapter);
+    public void shelf(View view) {
+        Toast.makeText(getApplicationContext(), "I work from SHELF", Toast.LENGTH_LONG).show();
+    }
+
+    public void pos(View view) {
+        Toast.makeText(getApplicationContext(), "I work from POS", Toast.LENGTH_LONG).show();
+    }
+
+    public void openStoreroom()
+    {
+        Intent storeIntent = new Intent(this, storeroomDash.class);
+        startActivity(storeIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Storeroom Management", Toast.LENGTH_LONG).show();  
     }
 }

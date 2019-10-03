@@ -26,6 +26,7 @@ public class ScannerBarcode extends AppCompatActivity implements ZXingScannerVie
 
     ZXingScannerView scan;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
