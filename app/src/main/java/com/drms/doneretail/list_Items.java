@@ -5,23 +5,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Toast;
 
-public class list_Items extends AppCompatActivity {
-    ImageView img;
+public class list_Items  extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items);
+    }
 
-        img = findViewById(R.id.image_id);
 
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent_stock = new Intent(getApplicationContext(),in_stock.class);
-                startActivity(intent_stock);
-            }
-        });
+    public void checkIn(View view) {
+        Toast.makeText(getApplicationContext(),"Starting Check-in process",Toast.LENGTH_LONG).show();
+
+        startActivity(new Intent(getApplicationContext(), ScannerBarcode.class));
+
+
+
+    }
+
+    public void orders(View view) {
+        Toast.makeText(getApplicationContext(),"I work from Orders",Toast.LENGTH_LONG).show();
+    }
+
+    public void stock(View view) {
+        Toast.makeText(getApplicationContext(),"I work from stock",Toast.LENGTH_LONG).show();
     }
 }
