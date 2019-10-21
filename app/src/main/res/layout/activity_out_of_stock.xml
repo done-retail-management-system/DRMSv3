@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".out_of_stock">
+    tools:context=".on_shelf">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -16,27 +16,27 @@
         <RelativeLayout
             android:id="@+id/headerView"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="500dp"
             android:orientation="vertical">
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:background="@color/colorPrimary">
-            </View>
+                android:layout_height="103dp"
+                android:background="@color/colorPrimary"></View>
 
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPagerHeader"
-                android:foregroundGravity="center"
-                android:overScrollMode="never"
-                android:clipToPadding="false"
-                android:layout_below="@+id/cardSearch"
-                android:layout_width="match_parent"
-                android:layout_height="150dp">
-            </androidx.viewpager.widget.ViewPager>
+            <!-- <androidx.viewpager.widget.ViewPager
+                 android:id="@+id/viewPagerHeader"
+                 android:foregroundGravity="center"
+                 android:overScrollMode="never"
+                 android:clipToPadding="false"
+                 android:layout_below="@+id/cardSearch"
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp">
+             </androidx.viewpager.widget.ViewPager>
 
-            <include android:id="@+id/shimmerMeal"
-                layout="@layout/item_view_pager_header_shimmer" />
+             <include android:id="@+id/shimmerMeal"
+                 layout="@layout/item_view_pager_header_shimmer" /> -->
 
 
             <TextView
@@ -52,64 +52,54 @@
                 android:textStyle="bold"/>
 
             <!-- TextView For the Title of the Page -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardSearch"
-                android:layout_width="match_parent"
+
+            <EditText
+                android:id="@+id/txtSearch"
+                android:layout_width="393dp"
+                android:layout_height="82dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="383dp"
+                android:background="@drawable/round_text"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Search Aisle"
+                android:inputType="textPersonName"
+                android:paddingLeft="50dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="59dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/title"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="16dp"
-                app:cardBackgroundColor="#ffffff"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="0dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:drawableStart="@drawable/ic_search_primary_light"
-                    android:drawableLeft="@drawable/ic_search"
-                    android:drawablePadding="10dp"
-                    android:gravity="center_vertical"
-                    android:padding="10dp"
-                    android:textColor="#ffffff" />
-            </androidx.cardview.widget.CardView> <!-- Created Card View for the Search Bar -->
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="331dp"
+                android:layout_marginBottom="399dp"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_search_category_default" />
+            <!-- Created Card View for the Search Bar -->
 
 
 
-            <TextView
-                android:id="@+id/titleCategory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/viewPagerHeader"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="16dp"
-                android:text="PRODUCT CATEGORIES"
-                android:textColor="#ffffff"
-                android:textSize="19sp"
-                android:textStyle="bold" /> <!-- TextView For Categories -->
+            <!-- TextView For Categories -->
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerCategory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/titleCategory"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="50dp"
-                android:scrollbars="none">
+            <!-- RecyclerView  to list Categories -->
 
 
-            </androidx.recyclerview.widget.RecyclerView> <!-- RecyclerView  to list Categories -->
-            <include android:id="@+id/shimmerCategory"
-                layout="@layout/item_recycler_category_shimmer"/>
+            <include
+                android:id="@+id/shimmerCategory"
+                layout="@layout/item_recycler_category_shimmer"
+                android:layout_width="500dp"
+                android:layout_height="324dp"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginTop="-324dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="8dp"
                 android:background="#ffffff"
                 android:gravity="center"
                 android:padding="10dp"
