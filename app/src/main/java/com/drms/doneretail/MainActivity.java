@@ -17,10 +17,8 @@ import android.os.Bundle;
 import java.util.ArrayList; // Create Arrays
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<DataS>dashList;
+
     RecyclerView recyclerView;
-    DashCap cap; // an instance from the DashCap class
-    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

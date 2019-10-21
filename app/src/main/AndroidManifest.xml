@@ -49,8 +49,13 @@
             android:parentActivityName=".WarehouseActivity" />
 
         <activity android:name=".MainActivity">
+            <intent-filter>
 
-        </activity> 
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
          
 
         <activity android:name=".Payment_Activity"></activity>
@@ -70,14 +75,8 @@
         <activity android:name=".out_of_stock"/>
         <activity android:name=".list_Items"/>
 
-        <activity android:name=".in_stock" >
-        <intent-filter>
+        <activity android:name=".in_stock"/> >
 
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
  
 
 

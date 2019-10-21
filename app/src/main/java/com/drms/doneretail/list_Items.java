@@ -16,20 +16,22 @@ public class list_Items  extends AppCompatActivity {
     }
 
 
+
     public void checkIn(View view) {
-        Toast.makeText(getApplicationContext(),"Starting Check-in process",Toast.LENGTH_LONG).show();
-
-        startActivity(new Intent(getApplicationContext(), ScannerBarcode.class));
-
-
-
+        Intent instock_intent  = new Intent(this, in_stock.class);
+        startActivity(instock_intent);
+        Toast.makeText(getApplicationContext(), "Showing ALL Products in Stock", Toast.LENGTH_LONG).show();
     }
 
     public void orders(View view) {
-        Toast.makeText(getApplicationContext(),"I work from Orders",Toast.LENGTH_LONG).show();
+        Intent out_intent  = new Intent(this, out_of_stock.class);
+        startActivity(out_intent);
+        Toast.makeText(getApplicationContext(), "Showing ALL Products Out of Stock", Toast.LENGTH_LONG).show();
     }
 
     public void stock(View view) {
-        Toast.makeText(getApplicationContext(),"I work from stock",Toast.LENGTH_LONG).show();
+        Intent on_shelf  = new Intent(this, on_shelf.class);
+        startActivity(on_shelf);
+        Toast.makeText(getApplicationContext(), "Showing ALL Products on the SHELF", Toast.LENGTH_LONG).show();
     }
 }
