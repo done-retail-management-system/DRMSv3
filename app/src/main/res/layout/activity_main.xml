@@ -25,7 +25,7 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="match_parent"
+                    android:layout_width="1297dp"
                     android:layout_height="240dp"
                     android:layout_weight="1"
                     android:background="#5E5555"
@@ -119,6 +119,7 @@
                             android:layout_height="wrap_content"
                             android:text="SHELF MANAGEMENT"
                             android:textAlignment="center" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -148,8 +149,38 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/signout"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        android:layout_weight="1.5"
+                        android:background="#C5653534"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="#C5653534"
+                            app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SIGN OUT"
+                            android:textAlignment="center" />
+                    </LinearLayout>
 
 
+
+                </LinearLayout>
 
             </LinearLayout>
 

@@ -6,11 +6,6 @@
  -----------------------------------------------------------------------------*/
 package com.drms.doneretail.view.home;
 
-import com.drms.doneretail.model.Categories;
-import com.drms.doneretail.model.Meals;
-
-import java.util.List;
-
 public interface HomeView {
     /*
      * TODO 13 Create void method

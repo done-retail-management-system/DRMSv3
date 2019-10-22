@@ -22,7 +22,7 @@
 
 
 
-        <activity android:name=".Checkin"></activity>
+        <activity android:name=".Checkin" ></activity>
  
         <activity android:name=".AddNewStock"> </activity>
           
@@ -43,7 +43,7 @@
             android:parentActivityName=".WarehouseActivity" />
 
 
-        <activity android:name=".WarehouseActivity"></activity>
+        <activity android:name=".WarehouseActivity" ></activity>
 
 
         <activity
@@ -51,40 +51,41 @@
             android:parentActivityName=".WarehouseActivity" />
 
 
-        <activity android:name=".MainActivity">
-              <intent-filter>
+        <activity android:name=".MainActivity" >
 
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity> 
          
 
-        <activity android:name=".Payment_Activity"></activity>
+        <activity android:name=".Payment_Activity" ></activity>
         
      
        
 
-        <activity android:name=".ScannerBarcode"></activity>
+        <activity android:name=".ScannerBarcode" ></activity>
       
-        <activity android:name=".POS_Activity"/>
+        <activity android:name=".POS_Activity" />
 
 
-        <activity android:name=".storeroomDash" />
+        <activity android:name=".storeroomDash"  android:parentActivityName=".MainActivity"/>
       
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
 
         <activity android:name=".recycler_category_shimmer" />
-        <activity android:name=".out_of_stock"/>
-        <activity android:name=".list_Items"/>
+        <activity android:name=".out_of_stock" />
+        <activity android:name=".list_Items" />
 
         <activity android:name=".in_stock" />
 
  
 
 
-        <activity android:name=".on_shelf"/>
+        <activity android:name=".on_shelf" android:theme="@style/AppTheme.NoActionBar"/>
 
 
 
