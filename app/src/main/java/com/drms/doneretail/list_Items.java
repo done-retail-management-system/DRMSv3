@@ -16,7 +16,6 @@ public class list_Items  extends AppCompatActivity {
     }
 
 
-
     public void checkIn(View view) {
         Intent instock_intent  = new Intent(this, in_stock.class);
         startActivity(instock_intent);

@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shelf(View view) {
-        Intent shelfIntent = new Intent(this, list_Items.class);
+        Intent shelfIntent = new Intent(this, aisles.class);
         startActivity(shelfIntent);
         Toast.makeText(getApplicationContext(), "Welcome to SHELF Management", Toast.LENGTH_LONG).show();
     }
