@@ -23,11 +23,11 @@
 
 
         <activity android:name=".Checkin"></activity>
- 
+
         <activity android:name=".AddNewStock"> </activity>
-          
-        <activity android:name=".ScanActivity"></activity> 
-          
+
+        <activity android:name=".ScanActivity"></activity>
+
         <activity
             android:name=".ShopsActivity"
             android:parentActivityName=".WarehouseActivity">
@@ -56,33 +56,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         
+
 
         <activity android:name=".Payment_Activity"></activity>
-        
-     
-       
+
+
+
 
         <activity android:name=".ScannerBarcode"></activity>
-      
+
         <activity android:name=".POS_Activity"/>
 
         <activity android:name=".storeroomDash" />
-      
+
         <activity android:name=".LoginActivity" />
 
         <activity android:name=".recycler_category_shimmer" />
         <activity android:name=".out_of_stock"/>
         <activity android:name=".list_Items"/>
 
-        <activity android:name=".in_stock"/> >
+        <activity android:name=".in_stock"/>
 
- 
+
 
 
         <activity android:name=".on_shelf"/>
 
-        
+
 
 
     </application>

@@ -19,11 +19,6 @@
             android:layout_height="500dp"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="103dp"
-                android:background="@color/colorPrimary"></View>
-
 
             <!-- <androidx.viewpager.widget.ViewPager
                  android:id="@+id/viewPagerHeader"
@@ -39,6 +34,11 @@
                  layout="@layout/item_view_pager_header_shimmer" /> -->
 
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:background="@color/colorPrimary"></View>
+
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="16dp"
-                android:text="IN-STOCK MANAGEMENT"
+                android:text="PRODUCTS IN-STOCK "
                 android:textColor="#ffffff"
                 android:textSize="30dp"
                 android:textStyle="bold"/>
@@ -64,7 +64,7 @@
                 android:background="@drawable/round_text"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Search Aisle"
+                android:hint="Search Product...."
                 android:inputType="textPersonName"
                 android:paddingLeft="50dp" />
 
@@ -105,6 +105,14 @@
                 android:padding="10dp"
                 android:text="@string/app_name"
                 android:textColor="#1d858f" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:text="REFRESH" />
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 
