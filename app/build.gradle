@@ -37,7 +37,7 @@ dependencies {
     implementation 'me.dm7.barcodescanner:zxing:1.9'
     implementation project(':jtds-1.2.7')
     implementation 'com.google.android.gms:play-services-wallet:18.0.0'
-    implementation 'com.android.support:appcompat-v7:24.1.1'
+    implementation 'com.android.volley:volley:1.1.0'
 
 }
 
