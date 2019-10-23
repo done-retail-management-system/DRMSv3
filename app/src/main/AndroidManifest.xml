@@ -87,11 +87,7 @@
         <activity android:name=".on_shelf"/>
 
         
-        <activity
-            android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
 
-        </activity>
 
     </application>
 
