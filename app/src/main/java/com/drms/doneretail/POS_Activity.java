@@ -35,6 +35,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.gson.JsonObject;
@@ -87,38 +88,48 @@ public class POS_Activity extends AppCompatActivity{
         searcher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // getItem();
+
             }
         });
         pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Payment_Activity.class);
-                startActivity(intent);
+               /* Intent intent = new Intent(getApplicationContext(), Payment_Activity.class);
+                startActivity(intent);*/
+                getItem();
+                txtview.setText(itemName);
             }
         });
     }
 
     private void getItem(){
-        JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET, URL_RETRIEVE, null, new Response.Listener<JSONObject>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_RETRIEVE, new Response.Listener<String>(){
             @Override
-            public void onResponse(JSONObject response) {
+            public void onResponse(String response) {
                 pd.dismiss();
-                txtview.setText("Response: " + response.toString());
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    JSONArray array = jsonObject.getJSONArray("results");
+                    for (int i = 0; i < array.length(); i++) {
+                        JSONObject jo = array.getJSONObject(i);
+                        itemName += jo.getString("Name");
+                        category += jo.getString("Category");
+                        expDate += jo.getString("Expiry_Date");
+                        price += jo.getString("Quantity");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
-            },
-                new Response.ErrorListener(){
+            }, new Response.ErrorListener(){
+
             @Override
             public void onErrorResponse(VolleyError error) {
-                pd.dismiss();
-                Toast.makeText(
-                        getApplicationContext(),
-                        error.getMessage(),
-                        Toast.LENGTH_LONG
-                ).show();
+                error.getMessage();
             }
+
         });
-        MySingleton.getInstance(POS_Activity.this).addToRequestque(getRequest);
+        MySingleton.getInstance(this).addToRequestque(stringRequest);
     }
 
 }
