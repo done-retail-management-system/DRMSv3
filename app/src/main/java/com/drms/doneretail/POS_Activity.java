@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -37,6 +38,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 //import com.google.gson.JsonObject;
 
@@ -55,6 +59,14 @@ public class POS_Activity extends AppCompatActivity{
     String itemName, category, expDate, price;
     public static EditText search;
     RequestQueue queue;
+    ImageView stombe;
+    TextView name;
+    String personName;
+    Uri personPhoto;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +76,8 @@ public class POS_Activity extends AppCompatActivity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_pos_);
-
+        stombe = findViewById(R.id.imageView2);
+        name = findViewById(R.id.empl_name_surname);
         item_cart = findViewById(R.id.list_Cart);
         scan_item = findViewById(R.id.btnScan);
         pay = findViewById(R.id.btnPayment);
@@ -73,6 +86,18 @@ public class POS_Activity extends AppCompatActivity{
         txtview = findViewById(R.id.empl_name_surname);
         pd = new ProgressDialog(this);
         pd.setMessage("Loading......");
+
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+        if (acct != null) {
+            personName = acct.getDisplayName();
+            personPhoto = acct.getPhotoUrl();
+            //Toast.makeText(getApplicationContext(),"Welcome to Done Retail " + personName ,Toast.LENGTH_LONG).show();
+            Glide.with(this).load(personPhoto).into(stombe);
+            name.setText(personName);
+
+        }
+
 
         queue = Volley.newRequestQueue(this);
 
@@ -94,10 +119,10 @@ public class POS_Activity extends AppCompatActivity{
         pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* Intent intent = new Intent(getApplicationContext(), Payment_Activity.class);
-                startActivity(intent);*/
-                getItem();
-                txtview.setText(itemName);
+                Intent intent = new Intent(getApplicationContext(), Payment_Activity.class);
+                startActivity(intent);
+                //getItem();
+               // txtview.setText(itemName);
             }
         });
     }
