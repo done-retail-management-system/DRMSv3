@@ -3,7 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
     useLibrary 'org.apache.http.legacy'
+
+    dexOptions{
+        javaMaxHeapSize "2g"
+    }
+
     defaultConfig {
         applicationId "com.drms.doneretail"
         minSdkVersion 19
@@ -29,16 +35,33 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.15.+'
+
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0-alpha1'
     implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha01'
 
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
+
     implementation 'com.google.android.gms:play-services-auth:16.0.0'
     implementation 'me.dm7.barcodescanner:zxing:1.9'
     implementation project(':jtds-1.2.7')
+
+
+
+
     implementation 'com.google.android.gms:play-services-wallet:18.0.0'
     implementation 'com.android.volley:volley:1.1.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha01'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+
+
+
+
+
 
 }
 

@@ -13,6 +13,7 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class StockActivity extends AppCompatActivity {
+
     TabLayout tabLayout;
     TabItem tabStockOnHand;
     TabItem tabReturned;

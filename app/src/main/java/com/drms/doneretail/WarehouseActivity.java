@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -17,12 +19,14 @@ import java.util.Calendar;
 public class WarehouseActivity extends AppCompatActivity {
 
 
-    private Button button;
+
+    private ImageButton button;
     private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
 
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -41,16 +45,17 @@ public class WarehouseActivity extends AppCompatActivity {
         //textViewDate.setText(currentDate);
         //button = button.findViewById(R.id.btn_stock);
 
-        button = (Button) findViewById(R.id.btn_stock);
+        button = (ImageButton) findViewById(R.id.imageButton1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openStockActivity();
+
                 //mediaPlayer.start();
             }
         });
 
-        button = (Button) findViewById(R.id.btn_order);
+        button = (ImageButton) findViewById(R.id.imageButton2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +64,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.btn_supplier);
+        button = (ImageButton) findViewById(R.id.imageButton3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +73,7 @@ public class WarehouseActivity extends AppCompatActivity {
             }
         });
 
-        button = (Button) findViewById(R.id.btn_shops);
+        button = (ImageButton) findViewById(R.id.imageButton4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
