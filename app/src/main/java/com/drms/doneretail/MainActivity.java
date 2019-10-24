@@ -25,6 +25,7 @@ import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView image;
     ImageButton logout;
     GoogleSignInClient mGoogleSignInClient;
+    GoogleSignInOptions gso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,10 +60,15 @@ public class MainActivity extends AppCompatActivity {
              personEmail = acct.getEmail();
              personId = acct.getId();
              personPhoto = acct.getPhotoUrl();
-            Toast.makeText(getApplicationContext(),"Welcome to Done Retail " + personName ,Toast.LENGTH_LONG).show();
+             Toast.makeText(getApplicationContext(),"Welcome to Done Retail " + personName ,Toast.LENGTH_LONG).show();
             //Glide.with(this).load(personPhoto).into(image);
         }
 
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
        logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,5 +143,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void userProfile(View view) {
+        Intent userIntent = new Intent(this, userProfile.class);
+        startActivity(userIntent);
     }
+
 }
