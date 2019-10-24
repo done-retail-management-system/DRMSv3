@@ -112,10 +112,10 @@ public class POS_Activity extends AppCompatActivity{
                     JSONArray array = jsonObject.getJSONArray("results");
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject jo = array.getJSONObject(i);
-                        itemName += jo.getString("Name");
-                        category += jo.getString("Category");
-                        expDate += jo.getString("Expiry_Date");
-                        price += jo.getString("Quantity");
+                        itemName = jo.getString("Name");
+                        category = jo.getString("Category");
+                        expDate = jo.getString("Expiry_Date");
+                        price = jo.getString("Quantity");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
