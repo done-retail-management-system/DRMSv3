@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(getApplicationContext(),"Signing" + personName + " out of Done Retail" ,Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Signing " + personName + " out of Done Retail" ,Toast.LENGTH_LONG).show();
                         finish();
                     }
                 });
