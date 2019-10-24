@@ -4,17 +4,9 @@ package com.drms.doneretail.view.home;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-import android.widget.GridLayout;
-import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.drms.doneretail.R;
-import com.drms.doneretail.adapter.ViewPagerHeaderAdapter;
-import com.drms.doneretail.adapter.RecyclerViewHomeAdapter;
-import com.drms.doneretail.model.Categories;
-import com.drms.doneretail.model.Meals;
-
 
 
 // TODO 31 implement the HomeView interface at the end
