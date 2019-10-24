@@ -6,6 +6,7 @@ import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -17,6 +18,17 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+
+
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+
+
+
+
+   
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -31,7 +43,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         login = findViewById(R.id.btnLogin);
+
+       
+    }
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
