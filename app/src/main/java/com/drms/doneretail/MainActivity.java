@@ -30,8 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void warehouse(View view) {
+
+        Toast.makeText(getApplicationContext(), "I work from WAREHOUSE", Toast.LENGTH_LONG).show();
+        Intent wareIntent = new Intent(this, WarehouseActivity.class);
+        startActivity(wareIntent);
         //Toast.makeText(getApplicationContext(), "I work from WAREHOUSE", Toast.LENGTH_LONG).show();
         openWarehouse();
+
     }
 
     public void store(View view) {
