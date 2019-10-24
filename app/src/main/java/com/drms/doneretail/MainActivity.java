@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.logout:
-                        signOut();
+                        signout();
                         break;
                 }
             }
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void signOut() {
+    private void signout() {
         mGoogleSignInClient.signOut()
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override

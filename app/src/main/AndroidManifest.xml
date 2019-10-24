@@ -18,7 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".userProfile"></activity>
+
+        <activity android:name=".userProfile"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".Checkin" />
         <activity android:name=".AddNewStock"></activity>
         <activity android:name=".ScanActivity" />
