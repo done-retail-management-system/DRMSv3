@@ -19,6 +19,10 @@
 
      <!--Shelf resources-->
 
+   <!--- <color name="colorPrimary">#85001F</color>
+    <color name="colorPrimaryDark">#630118</color>
+    <color name="colorAccent">#D8211B</color>
+    -->
 
     <color name="colorNull">#00000000</color>
     <color name="colorIcons">#7C7F81</color>

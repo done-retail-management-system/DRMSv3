@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoDevice;
@@ -32,8 +33,18 @@ import java.util.Locale;
 import java.util.Map;
 //
 public class LoginActivity extends AppCompatActivity {
+    public void start(View view) {
+        openDash();
+    }
 
-  /**  private EditText userText;
+    public void openDash()
+    {
+        Intent dashIntent = new Intent(this, MainActivity.class);
+        startActivity(dashIntent);
+        Toast.makeText(getApplicationContext(), "Welcome to Done Retail Management System", Toast.LENGTH_LONG).show();
+    }
+
+    private EditText userText;
     private EditText passText;
 
     private String username;
@@ -51,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-       // AWSCognito.init(getApplicationContext());
+        AWSCognito.init(getApplicationContext());
        // initApp();
         //findCurrent();
     }

@@ -3,9 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
+
+    useLibrary 'org.apache.http.legacy'
+
     dexOptions{
         javaMaxHeapSize "2g"
     }
+
     defaultConfig {
         applicationId "com.drms.doneretail"
         minSdkVersion 19
@@ -44,7 +48,7 @@ dependencies {
 
 
     implementation 'com.google.android.gms:play-services-wallet:18.0.0'
-    implementation 'com.android.support:appcompat-v7:24.1.1'
+    implementation 'com.android.volley:volley:1.1.0'
 
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha01'

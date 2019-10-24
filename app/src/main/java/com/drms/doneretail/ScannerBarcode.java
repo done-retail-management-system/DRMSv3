@@ -39,7 +39,8 @@ public class ScannerBarcode extends AppCompatActivity implements ZXingScannerVie
 
     @Override
     public void handleResult(Result result) {
-        POS_Activity.barcode = result.getText();
+       // POS_Activity.barcode = result.getText();
+        POS_Activity.search.setText(result.getText());
         onBackPressed();
 
 
