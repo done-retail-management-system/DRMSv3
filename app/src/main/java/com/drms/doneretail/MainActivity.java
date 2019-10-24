@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        image = findViewById(R.id.imageView6);
+       // image = findViewById(R.id.imageView6);
         logout = findViewById(R.id.logout);
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
              personId = acct.getId();
              personPhoto = acct.getPhotoUrl();
             Toast.makeText(getApplicationContext(),"Welcome to Done Retail " + personName ,Toast.LENGTH_LONG).show();
-            Glide.with(this).load(personPhoto).into(image);
+            //Glide.with(this).load(personPhoto).into(image);
         }
 
 
@@ -130,5 +130,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    public void userProfile(View view) {
+    }
 }
