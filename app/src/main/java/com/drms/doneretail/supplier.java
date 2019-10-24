@@ -7,6 +7,7 @@ public class supplier {
     private String address;
     private String contact_number;
     private String contact_person;
+    //private String contact_person;
 
     public supplier(int supp_id, String supplier_name, String category, String address, String contact_number, String contact_person) {
         this.supp_id = supp_id;
