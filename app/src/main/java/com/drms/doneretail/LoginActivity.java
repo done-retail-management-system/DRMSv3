@@ -24,13 +24,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
-
-
-   
-
-
 public class LoginActivity extends AppCompatActivity {
 
     GoogleSignInClient mGoogleSignInClient;
@@ -43,13 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         login = findViewById(R.id.btnLogin);
-
-       
-    }
-
-
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,11 +52,8 @@ public class LoginActivity extends AppCompatActivity {
                 .requestEmail()
                 .build();
 
-         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
     }
-
-
 
 
     private void signIn() {
