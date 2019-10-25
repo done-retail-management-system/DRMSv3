@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/network_security_config">
 
         <activity android:name=".userProfile"
             android:parentActivityName=".MainActivity"></activity>
@@ -41,18 +42,23 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Payment_Activity" />
         <activity android:name=".ScannerBarcode" />
-        <activity android:name=".POS_Activity" />
-        <activity
-            android:name=".storeroomDash"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".POS_Activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".storeroomDash"
+            android:parentActivityName=".MainActivity" >
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
 
         <activity android:name=".recycler_category_shimmer" />
@@ -64,7 +70,9 @@
         <activity android:name=".on_shelf"/>
 
 
+        <activity android:name=".AllProductsActivity">
 
+        </activity>
 
     </application>
 
