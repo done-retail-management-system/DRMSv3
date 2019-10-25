@@ -4,10 +4,12 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
 
+
     
     useLibrary 'org.apache.http.legacy'
 
     dexOptions{
+
 
         javaMaxHeapSize "2g"
     }
@@ -62,6 +64,8 @@ dependencies {
 
 
 
+
 }
+
 
 
