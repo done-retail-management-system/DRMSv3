@@ -29,6 +29,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.drms.doneretail.storeroomDash" />
         </activity>
+
         <activity
             android:name=".productListActivity"
             android:label="@string/title_product_list"
@@ -38,6 +39,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.drms.doneretail.storeroomDash" />
         </activity>
+
         <activity
             android:name=".productDetailActivity"
             android:label="@string/title_product_detail"
@@ -47,17 +49,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.drms.doneretail.productListActivity" />
         </activity>
+
         <activity
             android:name=".userProfile"
             android:parentActivityName=".MainActivity" />
 
-        tools:ignore="GoogleAppIndexingWarning"
-        android:networkSecurityConfig="@xml/network_security_config">
+
 
         <activity android:name=".aisles"></activity>
 
-        <activity android:name=".userProfile"
-            android:parentActivityName=".MainActivity"></activity>
+
 
 
         <activity android:name=".Checkin" />
@@ -66,13 +67,17 @@
         <activity
             android:name=".ShopsActivity"
             android:parentActivityName=".WarehouseActivity" />
+
         <activity
             android:name=".SuppliersActivity"
             android:parentActivityName=".WarehouseActivity" />
+
         <activity
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
+
         <activity android:name=".WarehouseActivity" />
+
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
@@ -80,34 +85,24 @@
         <activity android:name=".MainActivity" />
 
 
-
-        <activity android:name=".MainActivity">
-            
-
-
-
         <activity android:name=".Payment_Activity" />
         <activity android:name=".ScannerBarcode" />
-        <activity android:name=".POS_Activity" >
+        <activity android:name=".POS_Activity" />
 
 
         <activity
             android:name=".storeroomDash"
             android:parentActivityName=".MainActivity" >
-
         </activity>
+
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
-
         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
 
         </activity>
 
@@ -124,7 +119,6 @@
 
 
         <activity android:name=".AllProductsActivity">
-
         </activity>
 
 
