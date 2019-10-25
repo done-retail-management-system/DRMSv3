@@ -14,22 +14,50 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="DRMS"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
-        <activity android:name=".userProfile"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".orders"
+            android:label="@string/title_activity_orders"
+            android:parentActivityName=".storeroomDash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.drms.doneretail.storeroomDash" />
+        </activity>
+        <activity
+            android:name=".productListActivity"
+            android:label="@string/title_product_list"
+            android:parentActivityName=".storeroomDash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.drms.doneretail.storeroomDash" />
+        </activity>
+        <activity
+            android:name=".productDetailActivity"
+            android:label="@string/title_product_detail"
+            android:parentActivityName=".productListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.drms.doneretail.productListActivity" />
+        </activity>
+        <activity
+            android:name=".userProfile"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Checkin" />
-        <activity android:name=".AddNewStock"></activity>
+        <activity android:name=".AddNewStock" />
         <activity android:name=".ScanActivity" />
         <activity
             android:name=".ShopsActivity"
-            android:parentActivityName=".WarehouseActivity"></activity>
+            android:parentActivityName=".WarehouseActivity" />
         <activity
             android:name=".SuppliersActivity"
-            android:parentActivityName=".WarehouseActivity"></activity>
+            android:parentActivityName=".WarehouseActivity" />
         <activity
             android:name=".OrdersActivity"
             android:parentActivityName=".WarehouseActivity" />
@@ -37,8 +65,7 @@
         <activity
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
-
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Payment_Activity" />
         <activity android:name=".ScannerBarcode" />
         <activity android:name=".POS_Activity" />
@@ -54,18 +81,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".recycler_category_shimmer" />
         <activity android:name=".out_of_stock" />
         <activity android:name=".list_Items" />
         <activity android:name=".in_stock" />
-
-
-        <activity android:name=".on_shelf"/>
-
-
-
-
+        <activity android:name=".on_shelf" />
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 package com.drms.doneretail;
 // Items to display on the login screen
-public class ItemToDisplay {
+public class  ItemToDisplay {
 
     // Display text colors
     private int labelColor;
