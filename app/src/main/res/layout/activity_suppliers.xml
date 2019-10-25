@@ -13,8 +13,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="628dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginEnd="322dp"
         android:layout_marginBottom="406dp"
         android:text="See List of Suppliers Below"
         android:textSize="25sp"
@@ -48,51 +48,28 @@
         android:text="Remove Supplier"
         android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="182dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="233dp"
-        android:layout_marginEnd="549dp"
-        android:layout_marginBottom="9dp"
-        android:background="@drawable/button_properties"
-        android:text="Edit Supplier Details"
-        android:textSize="12sp" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="476dp"
-        android:layout_height="54dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="477dp"
-        android:layout_marginBottom="402dp"
-        android:background="@drawable/search_bar"
-        android:drawableStart="@android:drawable/ic_search_category_default"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Search" />
-
-    <ListView
+    <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="322dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="70dp"
-        android:background="@color/searchBar"
-        android:choiceMode="multipleChoice" />
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/list_suppliers"
+            android:layout_width="wrap_content"
+            android:layout_height="322dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="70dp"
+            android:background="@color/searchBar"
+            android:choiceMode="multipleChoice" />
+
+    </FrameLayout>
+
 
 
 

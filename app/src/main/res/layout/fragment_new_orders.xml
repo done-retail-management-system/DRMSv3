@@ -6,21 +6,52 @@
     android:background="@color/back"
     tools:context=".NewOrders">
 
+
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="227dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="275dp"
+        android:text=" New and Pending Orders"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <FrameLayout
+        android:layout_width="950dp"
+        android:layout_height="372dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="368dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="365dp"
-        android:layout_marginBottom="402dp"
-        android:text="New Orders"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="14dp">
+
+        <ListView
+            android:id="@+id/list_new_orders"
+            android:layout_width="442dp"
+            android:layout_height="match_parent"
+            android:background="@color/searchBar"
+            android:layout_gravity="left">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/list_pending"
+            android:layout_width="496dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/searchBar">
+        </ListView>
+
+
+    </FrameLayout>
+
 
 </RelativeLayout>
