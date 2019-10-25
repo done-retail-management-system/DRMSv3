@@ -6,6 +6,7 @@
     android:background="@color/back"
     tools:context=".NewOrders">
 
+
     <TextView
         android:id="@+id/textView22"
         android:layout_width="379dp"
@@ -13,15 +14,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="266dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="398dp"
-        android:text=" Orders fragment"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="275dp"
+        android:text=" New and In-Processing Orders"
         android:textAlignment="center"
-        android:textSize="30dp" />
-
+        android:textSize="25dp" />
 
     <FrameLayout
         android:layout_width="950dp"
@@ -43,6 +41,16 @@
             android:layout_gravity="left">
 
         </ListView>
+
+        <ListView
+            android:id="@+id/list_pending"
+            android:layout_width="496dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/searchBar">
+        </ListView>
+
+
     </FrameLayout>
 
 
