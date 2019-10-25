@@ -8,7 +8,7 @@
     android:layout_marginRight="8dp"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="50dp"
-    android:layout_below="@id/titleCategory">
+    >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/cooldrink"
+                        android:src="@drawable/bonaqua"
                         />
 
                     <View
@@ -76,7 +76,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/dairy" />
+                        android:src="@drawable/liquifruit" />
 
                     <View
                         android:layout_width="match_parent"
@@ -112,7 +112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/breakfast" />
+                        android:src="@drawable/redbull" />
 
                     <View
                         android:layout_width="match_parent"
@@ -156,7 +156,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/sauces" />
+                        android:src="@drawable/aquelle
+" />
 
                     <View
                         android:layout_width="match_parent"
@@ -192,7 +193,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/toiletry" />
+                        android:src="@drawable/cocacola" />
 
                     <View
                         android:layout_width="match_parent"
@@ -228,7 +229,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:padding="5dp"
-                        android:src="@drawable/toys" />
+                        android:src="@drawable/oros" />
 
                     <View
                         android:layout_width="match_parent"

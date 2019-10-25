@@ -19,8 +19,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+        <activity android:name=".aisles"></activity>
+
         <activity android:name=".userProfile"
             android:parentActivityName=".MainActivity"></activity>
+
         <activity android:name=".Checkin" />
         <activity android:name=".AddNewStock"></activity>
         <activity android:name=".ScanActivity" />
@@ -38,6 +41,7 @@
             android:name=".StockActivity"
             android:parentActivityName=".WarehouseActivity" />
 
+
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Payment_Activity" />
         <activity android:name=".ScannerBarcode" />
@@ -48,6 +52,7 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,13 +60,23 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Payment_Activity" />
+        <activity android:name=".ScannerBarcode" />
+        <activity android:name=".POS_Activity" />
+        <activity android:name=".storeroomDash" />
+        <activity android:name=".LoginActivity" />
+
+
+
         <activity android:name=".recycler_category_shimmer" />
         <activity android:name=".out_of_stock" />
         <activity android:name=".list_Items" />
         <activity android:name=".in_stock" />
 
 
+
         <activity android:name=".on_shelf"/>
+
 
 
 
