@@ -68,4 +68,21 @@
         <item>Shoprite, Crescent Hill</item>
 
     </string-array>
+
+    <!--Warehouse Info Strings-->
+    <string-array name="supplier_base">
+        <item></item>
+        <item>905 Adams Street, Hutchinson, Johannesburg, South Africa</item>
+        <item>5500 Oaza Osanagi, Higashine, Cape Town, South Africa</item>
+        <item>1425 Stokke Parkway, Menomonie, Stellenbosch South Africa</item>
+        <item>825 Old Trail Road, Etters, Somerset West, South Africa</item>
+        <item>5204 E. Ben White Boulevard, Rusternburg, South Africa</item>
+        <item>3545 North 1st Street, San Jose, Upington, South Africa</item>
+        <item>301 Washington Street, Cannon Falls, Rusternburg, South Africa</item>
+        <item>167 Batchelder Road, Seabrook, Upington, South Africa</item>
+
+
+    </string-array>
+
+
 </resources>
