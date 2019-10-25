@@ -24,10 +24,8 @@ public class PageAdapter extends FragmentPagerAdapter {
             case 1:
                 return new StockOnHand();
             case 2:
-                return new ReturnedStock();
-            case 3:
                 return new NewOrders();
-            case 4:
+            case 3:
                 return new CompletedOrders();
             default:
                 return null;
