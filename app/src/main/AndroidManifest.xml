@@ -42,7 +42,10 @@
             android:parentActivityName=".WarehouseActivity" />
 
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+
+
+        </activity>
         <activity android:name=".Payment_Activity" />
         <activity android:name=".ScannerBarcode" />
         <activity android:name=".POS_Activity" />
@@ -52,19 +55,15 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
-        <activity android:name=".Payment_Activity" />
-        <activity android:name=".ScannerBarcode" />
-        <activity android:name=".POS_Activity" />
-        <activity android:name=".storeroomDash" />
-        <activity android:name=".LoginActivity" />
+
 
 
 
