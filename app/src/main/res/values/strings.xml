@@ -52,4 +52,49 @@
     <string name="search_your_recipes">Search Product...</string>
     <string name="meal_categories">Product Categories</string>
 
+
+    <!--Warehouse Info Strings-->
+    <string-array name="design_patterns">
+        <item>Shoprite, Crescent Hill</item>
+        <item>Shoprite, Melrose Arch</item>
+        <item>Shoprite, Sandton</item>
+        <item>Shoprite, South Gate</item>
+        <item>Shoprite, Menlyn</item>
+        <item>Shoprite, Rosebank</item>
+        <item>Shoprite, Bryanston</item>
+        <item>Shoprite, Pavillion</item>
+        <item>Shoprite, Pretoria</item>
+        <item>Shoprite, Arcadia</item>
+        <item>Shoprite, Crescent Hill</item>
+
+    </string-array>
+
+    <!--Warehouse Info Strings-->
+    <string-array name="supplier_base">
+
+        <item>905 Adams Street, Johannesburg, South Africa</item>
+        <item>5500 Oaza Osanagi,  Cape Town, South Africa</item>
+        <item>1425 Stokke Parkway,  Stellenbosch South Africa</item>
+        <item>825 Old Trail Road,  Somerset West, South Africa</item>
+        <item>5204 E. Ben White Boulevard, Rusternburg, South Africa</item>
+        <item>3545 North 1st Street,  Upington, South Africa</item>
+        <item>301 Washington Street,  Rusternburg, South Africa</item>
+        <item>167 Batchelder Road,  Upington, South Africa</item>
+
+    </string-array>
+
+    <string-array name="Stock_base">
+
+        <item>REFRESHMENTS</item>
+        <item>5500 Oaza Osanagi,  Cape Town, South Africa</item>
+        <item>1425 Stokke Parkway,  Stellenbosch South Africa</item>
+        <item>825 Old Trail Road,  Somerset West, South Africa</item>
+        <item>5204 E. Ben White Boulevard, Rusternburg, South Africa</item>
+        <item>3545 North 1st Street,  Upington, South Africa</item>
+        <item>301 Washington Street,  Rusternburg, South Africa</item>
+        <item>167 Batchelder Road,  Upington, South Africa</item>
+
+    </string-array>
+
+
 </resources>
