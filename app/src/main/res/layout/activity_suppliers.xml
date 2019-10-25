@@ -48,21 +48,6 @@
         android:text="Remove Supplier"
         android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="182dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="233dp"
-        android:layout_marginEnd="549dp"
-        android:layout_marginBottom="9dp"
-        android:background="@drawable/button_properties"
-        android:text="Edit Supplier Details"
-        android:textSize="12sp" />
-
-
 
     <FrameLayout
         android:layout_width="wrap_content"
