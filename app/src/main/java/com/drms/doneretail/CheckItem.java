@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class CheckItem{
 
-    String check;
+  /**  String check;
     Boolean suceeded;
-    SqlConnection conn;
+    //SqlConnection conn;
     Connection connect;
 
 
@@ -26,9 +26,9 @@ public class CheckItem{
         data = new ArrayList<Map<String,String>>();
 
         try {
-            conn = new SqlConnection();
+            //conn = new SqlConnection();
 
-            connect = conn.conn;
+           // connect = conn.conn;
 
             if (connect == null){
                 check = "Check your internet Access";
@@ -62,5 +62,5 @@ public class CheckItem{
             check = ex.getMessage();
         }
         return data;
-    }
+    }*/
 }
