@@ -53,6 +53,15 @@
     <string name="meal_categories">Product Categories</string>
 
 
+    <string-array name="lister">
+        <item>5449000009067, RedBul, R33,5</item>
+        <item>5449000009066, Rainbow Chicken, R60</item>
+        <item>5349000009067, Nutriday Yogurt, R30</item>
+        <item>4449000009050, Koo Baked Beans, R15</item>
+        <item>5449000009065, Maggie Noodles, R5</item>
+    </string-array>
+
+
     <!--Warehouse Info Strings-->
     <string-array name="design_patterns">
         <item>Shoprite, Crescent Hill</item>

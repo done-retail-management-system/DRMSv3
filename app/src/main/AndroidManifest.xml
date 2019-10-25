@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/network_security_config">
 
         <activity android:name=".aisles"></activity>
 
@@ -49,10 +50,14 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Payment_Activity" />
         <activity android:name=".ScannerBarcode" />
-        <activity android:name=".POS_Activity" />
+        <activity android:name=".POS_Activity" >
+
+
         <activity
             android:name=".storeroomDash"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity" >
+
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -82,7 +87,9 @@
         <activity android:name=".on_shelf"/>
 
 
+        <activity android:name=".AllProductsActivity">
 
+        </activity>
 
 
     </application>

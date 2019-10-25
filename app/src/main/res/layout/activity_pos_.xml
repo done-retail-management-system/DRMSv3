@@ -25,17 +25,17 @@
     <TextView
         android:id="@+id/empl_name_surname"
         style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="204dp"
+        android:layout_width="405dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="67dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="662dp"
-        android:layout_marginBottom="556dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="453dp"
+        android:layout_marginBottom="561dp"
         android:text="Charles Marps"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp" />
@@ -55,18 +55,18 @@
 
     <TextView
         android:id="@+id/txtHours"
-        android:layout_width="234dp"
+        android:layout_width="418dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="633dp"
-        android:layout_marginBottom="514dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="436dp"
+        android:layout_marginBottom="516dp"
         android:text="Hours Remaining"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textAllCaps="true"
         android:textColor="#009688"
         android:textSize="24sp" />
@@ -83,14 +83,14 @@
 
     <TextView
         android:id="@+id/txtTill"
-        android:layout_width="158dp"
+        android:layout_width="415dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="708dp"
+        android:layout_marginEnd="440dp"
         android:layout_marginBottom="477dp"
         android:text="Till Nimber"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textAllCaps="true"
         android:textColor="#009688"
         android:textSize="24sp" />
@@ -141,31 +141,6 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="892dp"
-        android:layout_marginBottom="385dp"
-        android:clickable="true"
-        app:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="119dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="778dp"
-        android:layout_marginBottom="419dp"
-        android:text="Delete Item"
-        android:textAllCaps="true"
-        android:textColor="#009688"
         android:textSize="18sp" />
 
     <androidx.cardview.widget.CardView
@@ -229,9 +204,11 @@
         android:enabled="false"
         android:hint="Grand Total"
         android:inputType="textPersonName"
+        android:text="R24.00"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView10"
@@ -242,8 +219,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="71dp"
         android:hint="Tax Amount"
+        android:text="R2.00"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView11"
@@ -253,19 +232,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="115dp"
-        android:hint="Total"
         android:background="@drawable/round_text"
-        android:textSize="18sp" />
+        android:hint="Total"
+        android:paddingLeft="20sp"
+        android:text="R22.00"
+        android:textSize="18sp"
+        android:visibility="invisible" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgItem"
         android:layout_width="202dp"
         android:layout_height="245dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="272dp"
         android:layout_marginBottom="154dp"
-        app:srcCompat="@drawable/order" />
+        android:visibility="invisible"
+        app:srcCompat="@drawable/coca" />
 
     <TextView
         android:id="@+id/txtItemName"
@@ -276,9 +259,11 @@
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="357dp"
         android:hint="Item Name"
+        android:text="Coca Cola"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/txtCategory"
@@ -289,12 +274,14 @@
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="307dp"
         android:hint="Category"
+        android:text="Refreshment"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="invisible" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txtExpiry"
         android:layout_width="202dp"
         android:layout_height="44dp"
         android:layout_alignParentEnd="true"
@@ -302,12 +289,14 @@
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="261dp"
         android:hint="Expiry Date"
+        android:text="2020-JUN-10"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="invisible" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtPrice"
         android:layout_width="205dp"
         android:layout_height="41dp"
         android:layout_alignParentEnd="true"
@@ -315,9 +304,11 @@
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="218dp"
         android:hint="Price"
+        android:text="R24.00"
         android:textAlignment="center"
         android:textColorHighlight="@android:color/background_dark"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/btnPayment"
@@ -367,5 +358,59 @@
         android:layout_marginBottom="408dp"
         android:visibility="visible"
         app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="201dp"
+        android:layout_height="240dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="274dp"
+        android:layout_marginBottom="159dp"
+        app:srcCompat="@drawable/order" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="353dp"
+        android:hint="Item Name"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="303dp"
+        android:hint="Category"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="259dp"
+        android:hint="Expiry_Date"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="213dp"
+        android:hint="Price"
+        android:textSize="24sp" />
 
 </RelativeLayout>
