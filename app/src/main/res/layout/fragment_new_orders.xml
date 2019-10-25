@@ -17,7 +17,7 @@
         android:layout_marginStart="306dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="275dp"
-        android:text=" New and In-Processing Orders"
+        android:text=" New and Pending Orders"
         android:textAlignment="center"
         android:textSize="25dp" />
 

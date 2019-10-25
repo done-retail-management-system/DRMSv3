@@ -17,7 +17,7 @@ import android.widget.ListView;
  */
 public class NewOrders extends Fragment {
 
-    private static String[] Orders = {"ORDERS","", "Order 506","Order 507","Order 508","Order 509", "Order 510", "Order 511", "Order 512"};
+    private static String[] Orders = {"ORDERS","", "Order 506 from Shoprite, Crescent Hill","Order 507 from Shoprite, South Gate","Order 508 from Shoprite, Bryanston","Order 509 from Shoprite, Pavillion", "Order 510 from Shoprite, Pavillion" , "Order 511 from Shoprite, Crescent Hill", "Order 512 from Shoprite, Crescent Hil"};
     private static String[] PendingOrders = {"PENDING","", "Order 413","Order 301","Order 400","Order 322", "Order 333"};
     public NewOrders() {
         // Required empty public constructor
