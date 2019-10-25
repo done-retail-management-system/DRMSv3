@@ -64,6 +64,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
+    RecyclerView recyclerView;
+
     String personName;
     String personGivenName;
     String personFamilyName;
@@ -76,10 +80,12 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInOptions gso;
     String json;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
        // image = findViewById(R.id.imageView6);
         logout = findViewById(R.id.logout);
 
@@ -114,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void signout() {
         mGoogleSignInClient.signOut()
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
@@ -140,9 +147,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shelf(View view) {
-        Intent shelfIntent = new Intent(this, list_Items.class);
+
+        Intent shelfIntent = new Intent(this, aisles.class);
         startActivity(shelfIntent);
-        Toast.makeText(getApplicationContext(), "Welcome to Shelf Management", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Welcome to SHELF Management", Toast.LENGTH_LONG).show();
+
     }
 
     public void pos(View view) {

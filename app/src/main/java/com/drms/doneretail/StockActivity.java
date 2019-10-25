@@ -28,7 +28,6 @@ public class StockActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabLayout);
         tabStockOnHand = findViewById(R.id.tabStockOnHand);
         tabSummary = findViewById(R.id.tabSummary);
-        tabReturned = findViewById(R.id.tabReturned);
         viewPager = findViewById(R.id.viewPager);
 
         PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
