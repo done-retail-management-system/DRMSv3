@@ -51,6 +51,11 @@
 
     <string name="search_your_recipes">Search Product...</string>
     <string name="meal_categories">Product Categories</string>
+    <string name="title_product_list">products</string>
+    <string name="title_product_detail">product Detail</string>
+    <string name="title_activity_orders">orders</string>
+    <string name="tab_text_1">Active Orders</string>
+    <string name="tab_text_2">History</string>
 
 
     <string-array name="lister">

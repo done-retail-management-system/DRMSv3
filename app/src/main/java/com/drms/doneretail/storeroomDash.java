@@ -26,10 +26,12 @@ public class storeroomDash extends AppCompatActivity {
     }
 
     public void orders(View view) {
-        Toast.makeText(getApplicationContext(),"I work from Orders",Toast.LENGTH_LONG).show();
+        Intent orders = new Intent(this, orders.class);
+        startActivity(orders);
     }
 
     public void stock(View view) {
-        Toast.makeText(getApplicationContext(),"I work from stock",Toast.LENGTH_LONG).show();
+        Intent stock = new Intent(this, productListActivity.class);
+        startActivity(stock);
     }
 }

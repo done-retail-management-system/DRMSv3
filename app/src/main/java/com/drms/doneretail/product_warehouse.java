@@ -1,33 +1,59 @@
 package com.drms.doneretail;
 
+import com.google.gson.annotations.SerializedName;
+
 public class product_warehouse {
-    private int barcode;
+
+    @SerializedName("barcode")
+    private String barcode;
+
+    @SerializedName("quantity")
     private int quantity;
+
+    @SerializedName("category")
     private String category;
+
+    @SerializedName("type")
     private  String type;
+
+    @SerializedName("weight")
     private String weight;
+
+    @SerializedName("manufacture_name")
     private String manufacture_name;
+
+    @SerializedName("expiry_date")
     private String expire_date;
+
+    @SerializedName("location")
     private String location;
+
+    @SerializedName("fragile")
     private String fragile;
+
+    @SerializedName("perishable")
     private String perishable;
 
-    public product_warehouse(int barcode, int quantity, String category, String type, String weight, String manufacture_name, String expire_date, String location, String fragile, String perishable) {
+    @SerializedName("manufacture_date")
+    private String manufacture_date;
+
+    public product_warehouse(String barcode, int quantity, String category, String type, String weight, String manufacture_name, String expire_date, String location, String fragile, String perishable, String manufacture_date) {
         this.barcode = barcode;
         this.quantity = quantity;
         this.category = category;
         this.type = type;
         this.weight = weight;
         this.manufacture_name = manufacture_name;
+        this.manufacture_date = manufacture_date;
         this.expire_date = expire_date;
         this.location = location;
         this.fragile = fragile;
         this.perishable = perishable;
     }
-    public int getBarcode() {
+    public String getBarcode() {
         return barcode;
     }
-    public void setBarcode(int barcode) {
+    public void setBarcode(String barcode) {
         this.barcode = barcode;
     }
     public int getQuantity() {
@@ -83,5 +109,13 @@ public class product_warehouse {
     }
     public void setPerishable(String perishable) {
         this.perishable = perishable;
+    }
+
+    public String getManufacture_date() {
+        return manufacture_date;
+    }
+
+    public void setManufacture_date(String manufacture_date) {
+        this.manufacture_date = manufacture_date;
     }
 }

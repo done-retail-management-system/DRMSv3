@@ -2,6 +2,7 @@ package com.drms.doneretail;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.recyclerview.widget.GridLayoutManager; // Help Store my list
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,12 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -28,8 +32,34 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.gson.Gson;
 
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList; // Create Arrays
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton logout;
     GoogleSignInClient mGoogleSignInClient;
     GoogleSignInOptions gso;
+    String json;
 
 
     @Override
@@ -152,8 +183,25 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void userProfile(View view) {
+
         Intent userIntent = new Intent(this, userProfile.class);
         startActivity(userIntent);
+
+       //product_warehouse test = new product_warehouse("6009880243013",15, "Still Water", "Natural Spring", "500ml"
+              //  , "THIRSTI", "2019-12-12 00:00:00", "shelf 4", "0", "0");
+
+       // Gson gson = new Gson();
+
+        //json = gson.toJson(test);
+
+
+
+
     }
+
+
+
+
+
 
 }
